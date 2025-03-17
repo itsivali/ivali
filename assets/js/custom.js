@@ -166,7 +166,6 @@ $(function() {
     //      [ Skills Coounter ]
     // ========================================================================= //
 
-
     function skillsProgress() {
         var skills = {
           "terraform": "85%",
@@ -185,21 +184,31 @@ $(function() {
             $('#progress-' + language).animate(
               { 'width': targetPercent },
               {
-                duration: 1000, // 1 second animation
+                duration: 2000, // 2 seconds animation
                 step: function(now) {
-                  $(this).css({ 'font-weight': 'bold', 'color': 'yellow' });
-                  $(this).text(Math.floor(now) + "%");
+                  $('#progress-text-' + language).css({ 'font-weight': 'bold', 'color': 'white' });
+                  $('#progress-text-' + language).text(Math.floor(now) + "%");
                 },
                 complete: function() {
-                  $(this).css({ 'font-weight': 'bold', 'color': 'yellow' });
-                  $(this).text(targetPercent);
+                  $('#progress-text-' + language).css({ 'font-weight': 'bold', 'color': 'white' });
+                  $('#progress-text-' + language).text(targetPercent);
                 }
               }
             );
           }, delay * multiply);
           multiply++;
         });
-    }
+      }
+      
+      if ($(window).scrollTop() >= $("#about").offset().top - 200) {
+        skillsProgress();
+      }
+      
+      $(window).on("scroll", function() {
+        if ($(window).scrollTop() >= $("#about").offset().top - 200) {
+          skillsProgress();
+        }
+      });
       
       if ($(window).scrollTop() >= $("#about").offset().top - 200) {
         skillsProgress();

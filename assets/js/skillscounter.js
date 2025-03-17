@@ -18,16 +18,26 @@ function skillsProgress() {
           {
             duration: 1000, // 1 second animation
             step: function(now) {
-              $(this).css({ 'font-weight': 'bold', 'color': 'yellow' });
-              $(this).text(Math.floor(now) + "%");
+              $('#progress-text-' + language).css({ 'font-weight': 'bold', 'color': 'red' });
+              $('#progress-text-' + language).text(Math.floor(now) + "%");
             },
             complete: function() {
-              $(this).css({ 'font-weight': 'bold', 'color': 'yellow' });
-              $(this).text(targetPercent);
+              $('#progress-text-' + language).css({ 'font-weight': 'bold', 'color': 'red' });
+              $('#progress-text-' + language).text(targetPercent);
             }
           }
         );
       }, delay * multiply);
       multiply++;
     });
-}
+  }
+  
+  if ($(window).scrollTop() >= $("#about").offset().top - 200) {
+    skillsProgress();
+  }
+  
+  $(window).on("scroll", function() {
+    if ($(window).scrollTop() >= $("#about").offset().top - 200) {
+      skillsProgress();
+    }
+  });
