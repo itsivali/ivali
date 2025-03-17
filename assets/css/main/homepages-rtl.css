@@ -142,7 +142,7 @@ ul.list-unstyled {
   text-align: right;
   padding-right: 0; }
   #about .skills-bar-container li .progressbar-title .percent {
-    float: left; }
+    float:left; }
 
 /************************** 
 * Portfolio

@@ -1,4 +1,3 @@
-/*global $, jQuery, alert*/
 $(function() {
 
 
@@ -9,7 +8,7 @@ $(function() {
 
     'use strict';
     var typed = new Typed('#typed-slide-1', {
-        strings: ['Designer', 'Freelancer'],
+        strings: ['Quiet Innovator', 'Backend Engineer' , 'API Builder' ,'Azure DevOps Engineer' , 'Life Long Learner'],
         typeSpeed: 60,
         backSpeed: 60,
         loop: true
@@ -60,7 +59,7 @@ $(function() {
             target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
             if (target.length) {
                 $('html,body').stop().animate({
-                    scrollTop: target.offset().top - 69 //offsets for fixed header
+                    scrollTop: target.offset().top - 69 
                 }, 900);
                 return false;
             }

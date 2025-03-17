@@ -1975,8 +1975,8 @@ a:focus,
 .line-stripe-3,
 .line-stripe-4 {
   height: 89%;
-  width: 1px;
-  background: rgba(255, 255, 255, 0.03);
+  width: 6px;
+  background: rgba(248, 75, 52, 0.03);
   position: absolute;
   bottom: 0; }
 
@@ -2474,7 +2474,7 @@ select:-webkit-autofill:focus {
   position: relative; }
 
 #header {
-  background: url(../../images/headerfix.jpg) repeat scroll center center/cover;
+  background: url(../../images/wallpaper.jpeg) repeat scroll center center/cover;
   background-attachment: fixed;
   margin-bottom: 0;
   width: 100%;
@@ -2509,17 +2509,22 @@ select:-webkit-autofill:focus {
         line-height: 1.9;
         letter-spacing: 0.5px;
         display: initial; }
-      #header .head-info .header-content .subtitle {
-        align-items: center;
-        display: flex;
-        position: relative; }
-        #header .head-info .header-content .subtitle::before {
+        #header .head-info .header-content .subtitle {
+          align-items: center;
+          display: flex;
+          position: relative;
+          font-weight: bold;
+          font-size: 20px;  
+          color:#f1df44;     
+      }
+      #header .head-info .header-content .subtitle::before {
           content: "";
-          width: 15px;
+          width: 20px;
           display: inline-block;
           height: 3px;
           background: #535454;
-          margin-right: 10px; }
+          margin-right: 10px;
+      }
       #header .head-info .header-content span.paye {
         font-size: 16px !important;
         display: inherit; }
