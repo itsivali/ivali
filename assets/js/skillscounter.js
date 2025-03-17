@@ -1,29 +1,33 @@
-// ========================================================================= //
-//   skillsProgress
-// ========================================================================= //
-
 function skillsProgress() {
-    var lang = {
-        "html": "100%",
-        "css": "90%",
-        "javascript": "70%"
+    var skills = {
+        "terraform": "85%",
+        "python": "90%",
+        "go": "80%",
+        "docker": "75%",
+        "kubernetes": "70%",
+        "flutter": "80%"
     };
 
     var multiply = 2;
 
-    $.each(lang, function(language, pourcent) {
-
+    $.each(skills, function(language, targetPercent) {
         var delay = 600;
-
         setTimeout(function() {
-            $('#' + language + '-pourcent').html(pourcent);
-            $('#progress-' + language).animate({
-                'width': pourcent
-            }, 600);
+            // Animate the progress bar dynamically, updating its text so the percentage appears on top
+            $('#progress-' + language).animate(
+                { 'width': targetPercent },
+                {
+                    duration: 600,
+                    step: function(now) {
+                        $(this).text(Math.floor(now) + "%");
+                    },
+                    complete: function() {
+                        $(this).text(targetPercent);
+                    }
+                }
+            );
         }, delay * multiply);
-
         multiply++;
-
     });
 }
 

@@ -2715,36 +2715,48 @@ span#typed-slide-1 {
           animation-timing-function: ease-out;
           -webkit-animation-fill-mode: both;
           animation-fill-mode: both; }
-        #about .skills-bar-container li .bar-container #progress-html {
-          -webkit-animation-name: progress-html;
-          animation-name: progress-html;
-          -webkit-animation-delay: 0.7s;
-          animation-delay: 0.7s;
-          margin: 0; }
-        #about .skills-bar-container li .bar-container #progress-css {
-          -webkit-animation-name: progress-css;
-          animation-name: progress-css;
-          -webkit-animation-delay: 1.4s;
-          animation-delay: 1.4s;
-          margin: 0; }
-        #about .skills-bar-container li .bar-container #progress-javascript {
-          -webkit-animation-name: progress-javascript;
-          animation-name: progress-javascript;
-          -webkit-animation-delay: 2.1s;
-          animation-delay: 2.1s;
-          margin: 0; }
-        #about .skills-bar-container li .bar-container #progress-php {
-          -webkit-animation-name: progress-php;
-          animation-name: progress-php;
-          -webkit-animation-delay: 2.8s;
-          animation-delay: 2.8s;
-          margin: 0; }
-        #about .skills-bar-container li .bar-container #progress-angular {
-          -webkit-animation-name: progress-angular;
-          animation-name: progress-angular;
-          -webkit-animation-delay: 3.5s;
-          animation-delay: 3.5s;
-          margin: 0; }
+          #about .skills-bar-container li .bar-container #progress-terraform {
+            -webkit-animation-name: progress-terraform;
+            animation-name: progress-terraform;
+            -webkit-animation-delay: 0.7s;
+            animation-delay: 0.7s;
+            margin: 0;
+        }
+        #about .skills-bar-container li .bar-container #progress-python {
+            -webkit-animation-name: progress-python;
+            animation-name: progress-python;
+            -webkit-animation-delay: 1.4s;
+            animation-delay: 1.4s;
+            margin: 0;
+        }
+        #about .skills-bar-container li .bar-container #progress-go {
+            -webkit-animation-name: progress-go;
+            animation-name: progress-go;
+            -webkit-animation-delay: 2.1s;
+            animation-delay: 2.1s;
+            margin: 0;
+        }
+        #about .skills-bar-container li .bar-container #progress-docker {
+            -webkit-animation-name: progress-docker;
+            animation-name: progress-docker;
+            -webkit-animation-delay: 2.8s;
+            animation-delay: 2.8s;
+            margin: 0;
+        }
+        #about .skills-bar-container li .bar-container #progress-kubernetes {
+            -webkit-animation-name: progress-kubernetes;
+            animation-name: progress-kubernetes;
+            -webkit-animation-delay: 3.5s;
+            animation-delay: 3.5s;
+            margin: 0;
+        }
+        #about .skills-bar-container li .bar-container #progress-flutter {
+            -webkit-animation-name: progress-flutter;
+            animation-name: progress-flutter;
+            -webkit-animation-delay: 4.2s;
+            animation-delay: 4.2s;
+            margin: 0;
+        }
   #about .hvr-shutter-in-horizontal {
     background: transparent;
     display: inline-block;
