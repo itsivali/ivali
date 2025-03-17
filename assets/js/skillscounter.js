@@ -13,7 +13,6 @@ function skillsProgress() {
     $.each(skills, function(language, targetPercent) {
         var delay = 600;
         setTimeout(function() {
-            // Animate the progress bar dynamically, updating its text so the percentage appears on top
             $('#progress-' + language).animate(
                 { 'width': targetPercent },
                 {
