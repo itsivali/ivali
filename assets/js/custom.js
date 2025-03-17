@@ -168,30 +168,48 @@ $(function() {
 
 
     function skillsProgress() {
-        var lang = {
-            "html": "100%",
-            "css": "90%",
-            "javascript": "70%"
+        var skills = {
+          "terraform": "85%",
+          "python": "90%",
+          "go": "80%",
+          "docker": "75%",
+          "kubernetes": "70%",
+          "flutter": "80%"
         };
-
+      
         var multiply = 2;
-
-        $.each(lang, function(language, pourcent) {
-
-            var delay = 600;
-
-            setTimeout(function() {
-                $('#' + language + '-pourcent').html(pourcent);
-                $('#progress-' + language).animate({
-                    'width': pourcent
-                }, 600);
-            }, delay * multiply);
-
-            multiply++;
-
+        var delay = 600;
+      
+        $.each(skills, function(language, targetPercent) {
+          setTimeout(function() {
+            $('#progress-' + language).animate(
+              { 'width': targetPercent },
+              {
+                duration: 1000, // 1 second animation
+                step: function(now) {
+                  $(this).css({ 'font-weight': 'bold', 'color': 'yellow' });
+                  $(this).text(Math.floor(now) + "%");
+                },
+                complete: function() {
+                  $(this).css({ 'font-weight': 'bold', 'color': 'yellow' });
+                  $(this).text(targetPercent);
+                }
+              }
+            );
+          }, delay * multiply);
+          multiply++;
         });
     }
-
+      
+      if ($(window).scrollTop() >= $("#about").offset().top - 200) {
+        skillsProgress();
+      }
+      
+      $(window).on("scroll", function() {
+        if ($(window).scrollTop() >= $("#about").offset().top - 200) {
+          skillsProgress();
+        }
+      });
 
     $('a[href="#page2"]').on('click', function() {
         skillsProgress();

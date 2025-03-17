@@ -4003,26 +4003,27 @@ span#typed-slide-1 {
 }
 
 /* Ensure the container of the progress bar is positioned relatively */
+/* Container for the animated bar */
 #about .skills-bar-container li .bar-container {
   position: relative;
   width: 100%;
   height: 3px;
-  background: #ddd; /* Background for the empty bar */
+  background: #ddd; /* empty bar background */
 }
 
-/* The progress bar element that grows – its width is animated from JS */
+/* The progressbar element itself */
 #about .skills-bar-container li .bar-container .progressbar {
   position: absolute;
-  left: 0;         /* Start from the left */
+  left: 0;
   top: 0;
   height: 100%;
-  background: #ff3d4f; /* Your progress color */
-  text-align: right;   /* Align the number to the right edge */
-  padding-right: 5px;  /* Adjust padding as needed */
+  background: #ff3d4f; /* progressbar color */
+  text-align: right;      /* ensures the text is at the right-end */
+  padding-right: 5px;     /* adjust as needed */
   color: #fff;
   font-size: 12px;
-  line-height: 3px;    /* Matches container height */
-  white-space: nowrap; /* Prevents wrapping */
+  line-height: 3px;       /* matches container height */
+  white-space: nowrap;
   overflow: visible;
 }
 #about .skills-bar-container li .bar-container #progress-terraform {
