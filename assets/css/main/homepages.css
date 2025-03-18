@@ -1,9 +1,9 @@
 /***************************************************************************************************************
 ||||||||||||||||||||||||||||       MASTER STYLESHEET FOR Invest               ||||||||||||||||||||||||||||||||||
 ****************************************************************************************************************
-    Project:        Bayra | Personal Portfolio / CV / Resume Template
+    Project:        Willis | Personal Portfolio | Resume 
     Version:        1.0
-    Author:         Uxign
+    Author:         Willis Ivali
 
 ||||||||||||||||||||||||||||              TABLE OF CONTENT                  ||||||||||||||||||||||||||||||||||||
 ****************************************************************************************************************
@@ -156,9 +156,10 @@ a:focus,
 .blog-sidebar .sidebar-posts .post-inner .post-info h5 a:hover,
 .blog-sidebar .sidebar-archives .archives-list li a:hover,
 .blog-sidebar .sidebar-tags .tags-list li a:hover {
-  -webkit-transition: all .5s ease-in-out !important;
-  -o-transition: all .5s ease-in-out !important;
-  transition: all .5s ease-in-out !important;
+  -webkit-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+  will-change: transform, opacity;
 }
 
 /************************** 
@@ -3696,6 +3697,13 @@ select:-webkit-autofill:focus {
   align-items: center;
 }
 
+/* On small screens, disable fixed attachment and adjust height for better responsiveness */
+@media (max-width: 768px) {
+  #header {
+    background-attachment: scroll;
+    height: 70vh;
+  }
+}
 #header:before {
   content: '';
   opacity: 0.5;

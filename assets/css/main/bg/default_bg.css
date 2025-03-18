@@ -1,40 +1,4 @@
-/************************** 
-*  Import style
-***************************/
-/************************** 
-* Main Color
-***************************/
-/* 1-  Color */
-/* 2-  Background */
-/* 3-  Border */
-/* Alert */
-/************************** 
-* Dark Home Page one
-***************************/
-/************************** 
-* Light Home Page one
-***************************/
-/************************** 
-* List Color
-***************************/
-/************************** 
-* Border Resume
-***************************/
-/************************** 
-* Main Fonts
-***************************/
-/************************** 
-* Float fixing
-***************************/
-/************************** 
-* Text Align
-***************************/
-/************************** 
-* Font-weight
-***************************/
-/************************** 
-* Transition
-***************************/
+
 .transition {
   -webkit-transition: all .5s ease-in-out !important;
   -o-transition: all .5s ease-in-out !important;
@@ -159,14 +123,7 @@ body {
 ***************************/
 #about .about-blok .aboutinfo .about-img {
   border: 1px solid rgba(255, 255, 255, 0.1); }
-  #about .about-blok .aboutinfo .about-img:after {
-    /*  content: '';
-    position: absolute;
-    bottom: 17px;
-    left: 30px;
-    width: 60%;
-    height: 5px;
-    z-index: 2; */ }
+  /* Removed empty ruleset for '#about .about-blok .aboutinfo .about-img:after' */
 #about .about-blok .aboutinfo .about-descr .title {
   color: #ffffff; }
 #about .about-blok .aboutinfo .about-descr .fa {
@@ -222,10 +179,8 @@ body {
     #portfolio .portfolio-item .portfolio-thumbnail .overlay .content-port .fa {
       color: #ffffff;
       background: rgba(29, 30, 32, 0.5); }
-  #portfolio .portfolio-item .portfolio-thumbnail .botom-thumbnail {
-    /*     background: transparent !important; */ }
-    #portfolio .portfolio-item .portfolio-thumbnail .botom-thumbnail p {
-      color: #9da1a5; }
+  #portfolio .portfolio-item .portfolio-thumbnail .botom-thumbnail p {
+    color: #9da1a5; }
 
 /************************** 
 * resume
@@ -313,4 +268,4 @@ body {
 #footer {
   background: #1d1e20; }
 
-/*# sourceMappingURL=default_bg.css.map */
+
