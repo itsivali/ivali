@@ -3854,7 +3854,8 @@ span.typed-cursor.typed-cursor--blink {
 }
 
 span#typed-slide-1 {
-  display: initial;
+  direction: rtl;
+  text-align: right;
 }
 
 /************************** 
