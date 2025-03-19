@@ -16,7 +16,7 @@ function skillsProgress() {
       $('#progress-' + language).animate(
         { 'width': targetPercent },
         {
-          duration: 1000, // 1 second animation
+          duration: 1000, // Animation duration: 1 second
           step: function (now) {
             $(this).text(Math.floor(now) + "%");
           },
