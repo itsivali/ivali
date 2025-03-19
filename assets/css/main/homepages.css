@@ -4019,45 +4019,30 @@ span#typed-slide-1 {
   overflow: hidden;
 }
 
-/* Container for the progress bar */
+/* Skills Progressbar Container */
 #about .skills-bar-container li .bar-container {
   position: relative;
   width: 100%;
   height: 20px;
-  /* Adjust height if needed */
   background: #ddd;
-  /* Empty bar background */
   overflow: hidden;
   margin-bottom: 30px;
 }
 
-/* Container for the progress bar */
-.skills-bar-container li .bar-container {
-  position: relative;
-  width: 100%;
-  height: 20px;
-  /* Adjust height if needed */
-  background: #ddd;
-  /* Background for the empty bar */
-  overflow: hidden;
-  margin-bottom: 30px;
-}
-
-/* The animated progress bar and overlapping percentage text */
+/* Animated Progressbar with Overlapping Percentage */
 .skills-bar-container li .bar-container .progressbar {
   position: absolute;
   left: 0;
   top: 0;
   height: 100%;
   width: 0;
-  /* Starts at 0% */
+  /* starts at 0, will be animated by JS */
   background: #ff3d4f;
   text-align: right;
   padding-right: 5px;
   color: red;
   font-weight: bold;
   line-height: 20px;
-  /* Vertically center text */
   white-space: nowrap;
 }
 #about .skills-bar-container li {
