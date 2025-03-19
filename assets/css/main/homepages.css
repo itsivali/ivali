@@ -4008,7 +4008,28 @@ span#typed-slide-1 {
   display: inline-block;
   width: 100%;
 }
+/* The animated progressbar */
+#about .skills-bar-container li .bar-container .progressbar {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: #ff3d4f;
+  /* progressbar color */
+}
 
+/* The percentage text placed at the end of the container */
+#about .skills-bar-container li .bar-container .progress-text {
+  position: absolute;
+  right: 5px;
+  /* adjust as needed */
+  top: -20px;
+  /* position above the bar; adjust as required */
+  font-weight: bold;
+  color: red;
+  font-size: 12px;
+  white-space: nowrap;
+}
 #about .skills-bar-container li {
   position: relative;
   width: 100%;
