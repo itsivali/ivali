@@ -337,18 +337,115 @@
         </div>
     </main>
 
-    <!-- Scripts -->
+    <!-- start section theme option -->
+    <div class="sidebar-contet">
+        <div class="contentsidebar">
+            <div class="themecolor mb-10">
+                <h4 class="maintitle">theme color</h4>
+                <ul class="list-unstyled list-sidebar list-color">
+                    <li><span data-color="default"></span></li>
+                    <li><span data-color="orange"></span></li>
+                    <li><span data-color="gold"></span></li>
+                    <li><span data-color="green"></span></li>
+                    <li><span data-color="blue"></span></li>
+                    <li><span data-color="purple"></span></li>
+                    <li><span data-color="yellow"></span></li>
+                    <li><span data-color="rose"></span></li>
+                </ul>
+            </div>
+            <div class="themecolor mb-30">
+                <h4 class="maintitle">Menu</h4>
+                <ul class="list-unstyled list-sidebar list-change-menu">
+                    <li><span class="btn overlay active">overlay</span></li>
+                    <li><span class="btn right">Right</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- End section theme option -->
+    
+    
+    <!-- Jquery -->
     <script src="assets/js/jquery.js"></script>
+    <!-- popper -->
     <script src="assets/js/popper.min.js"></script>
+    <!-- Bootstrap js -->
     <script src="assets/js/bootstrap.min.js"></script>
+    <!-- Validate Mailichimp-->
+    <script src="assets/js/jquery.ajaxchimp.js"></script>
+    <!-- Navbar -->
+    <script src="assets/js/velocity.min.js"></script>
+    <script src="assets/js/navtoogle.js"></script>
+    <!-- Typed JS -->
+    <script src="assets/js/typed.js"></script>
+    <!--  skillscounter -->
+    <script src="assets/js/skillscounter.js"></script>
+    <!-- Validate Form -->
+    <script src="assets/js/jquery.validate.js"></script>
+    <script src="assets/js/register.js"></script>
+    <!-- TweenMax -->
+    <script src="assets/js/TweenMax.min.js"></script>
+    <!-- Magnific Popup js -->
+    <script src="assets/js/jquery.magnific-popup.js"></script>
+    <script src="assets/js/maginficpopup.js"></script>
+    <!-- jquery.nicescroll.min js -->
+    <script src="assets/js/jquery.nicescroll.min.js"></script>
+    <!-- Main custom-->
     <script src="assets/js/custom.js"></script>
+    <script language=JavaScript>
+        //Disable right mouse click Script
+        //By Geek Site.in
 
-    <!-- Disable right-click context menu -->
-    <script>
-        document.addEventListener('contextmenu', function (e) {
-            e.preventDefault();
-        });
+        var message = "Function Disabled!";
+
+        ///////////////////////////////////
+        function clickIE4() {
+            if (event.button == 2) {
+                alert(message);
+                return false;
+            }
+        }
+
+        function clickNS4(e) {
+            if (document.layers || document.getElementById && !document.all) {
+                if (e.which == 2 || e.which == 3) {
+                    alert(message);
+                    return false;
+                }
+            }
+        }
+
+        if (document.layers) {
+            document.captureEvents(Event.MOUSEDOWN);
+            document.onmousedown = clickNS4;
+        } else if (document.all && !document.getElementById) {
+            document.onmousedown = clickIE4;
+        }
+
+        document.oncontextmenu = new Function("alert(message);return false")
     </script>
-</body>
-
-</html>
+    
+    <script>
+        document.onkeydown = function (e) {
+            if (event.keyCode == 123) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+                return false;
+            }
+            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                return false;
+            }
+        }
+    </script>
+    
+    
+    </body>
+    
+    </html>
