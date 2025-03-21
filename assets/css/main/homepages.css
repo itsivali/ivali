@@ -1274,6 +1274,14 @@ body {
   left: 0;
 }
 
+
+.navbar-wrapper,
+.navfixed,
+.mainmenunav {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
 .navbar-wrapper .navfixed .container {
   height: 100%;
 }
