@@ -1,30 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="rtl">
 
-
-<!-- Mirrored from bayra-html.inaikas.com/details.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 12 Mar 2025 07:11:03 GMT -->
 <head>
-    <!-- meta -->
+    <!-- Meta Tags -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Site title -->
-    <title>Bayra | Personal Portfolio / CV / Resume Template</title>
-    <!-- Favicon -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="Willis Ivali Resume – Experience Timeline">
+    <meta name="keywords"
+        content="Resume, Experience, Software Engineer, DevOps, Cloud, Terraform, Docker, Kubernetes, Flutter, Python, Go">
+    <meta name="author" content="Willis Ivali">
+    <title>Willis Ivali - Resume</title>
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png" />
-    <!-- Site css -->
+    <!-- Site CSS -->
     <link href="assets/css/main/homepages.css" rel="stylesheet">
     <link href="assets/css/main/skins/default_color.css" rel="stylesheet">
     <link href="assets/css/main/bg/default_bg.css" rel="stylesheet">
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
+    <link href="assets/css/main/homepages-rtl.css" rel="stylesheet">
+
+    <style>
+        /* Basic Timeline Styles */
+        .timeline {
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+
+        /* The vertical line */
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #ddd;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+
+        /* Container around content */
+        .timeline-item {
+            padding: 20px 30px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+
+        /* Left timeline items */
+        .timeline-item.left {
+            left: 0;
+            text-align: right;
+        }
+
+        /* Right timeline items */
+        .timeline-item.right {
+            left: 50%;
+            text-align: left;
+        }
+
+        /* Timeline circles */
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            right: -10px;
+            background-color: white;
+            border: 4px solid #ff3d4f;
+            top: 30px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .timeline-item.right::after {
+            left: -10px;
+        }
+
+        /* Date styling */
+        .timeline-date {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #ff3d4f;
+        }
+
+        /* Content styling */
+        .timeline-content {
+            padding: 20px;
+            background: #f9f9f9;
+            position: relative;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .timeline-content h3 {
+            margin-top: 0;
+            font-family: "Saira", sans-serif;
+        }
+
+        .timeline-content p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        @media screen and (max-width: 768px) {
+
+            /* For mobile, make timeline items full-width */
+            .timeline::after {
+                left: 31px;
+            }
+
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+
+            .timeline-item.left,
+            .timeline-item.right {
+                left: 0;
+                text-align: left;
+            }
+
+            .timeline-item::after {
+                left: 18px;
+            }
+        }
+    </style>
 </head>
 
-<body id="mainBlog">
+<body>
+    <!-- cursor start -->
+    <div class="cursor"></div>
+    <!-- End  start -->
 
 
     <!-- start section navbar -->
@@ -35,8 +145,10 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="mylogo">
-                                <a class="logo logo-light" href="index.html"><img src="assets/images/logo-sidebar.png" alt="Logo bayra"></a>
-                                <a class="logo logo-dark" href="index.html"><img src="assets/images/logo-sidebar.png" alt="Logo bayra"></a>
+                                <a class="logo logo-light" href="index.html"><img src="assets/images/logo-sidebar.png"
+                                        alt="Willis Ivali"></a>
+                                <a class="logo logo-dark" href="index.html"><img src="assets/images/logo-sidebar.png"
+                                        alt="Willis Ivali"></a>
                             </div>
                             <div class="iconfix">
                                 <a href="#" class="cd-nav-trigger" onclick="return false;">Menu<span
@@ -69,532 +181,176 @@
                                         </li>
                                         <li class="nav-item">
                                             <p>04</p>
-                                            <a class="nav-link" href="#team">team</a>
+                                            <a class="nav-link" href="resume.html"></a>Resume</a>
                                         </li>
                                         <li class="nav-item">
                                             <p>05</p>
-                                            <a class="nav-link" href="#journal">news</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <p>06</p>
                                             <a class="nav-link" href="#contact">Contact</a>
                                         </li>
                                     </ul>
                                 </div>
                             </nav>
                         </div>
-                        <div class="col-md-6">
-                            <div class="navinfo">
-                                <div class="navfixinfo">
-                                    <div class="row">
-                                        <div class="col-md-12">
-                                            <div class="testtest">
-                                                <div class="contact-block">
-                                                    <h4 class="maintitle">EMAIL</h4>
-                                                    <span>mail@domaine.com</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="testtest">
-                                                <div class="contact-block">
-                                                    <h4 class="maintitle">CALL US</h4>
-                                                    <span>700 000 40 19</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="testtest">
-                                                <div class="contact-block">
-                                                    <h4 class="maintitle">ADDRESS</h4>
-                                                    <span>308, Royal Square, Nr.</span>
-                                                </div>
-                                            </div>
-                                        </div>
+
+                        <!-- Resume Section -->
+                        <main class="cd-content content">
+                            <div id="resume" class="text-center pt-90">
+                                <div class="container">
+                                    <div class="section-title">
+                                        <h2>Resume</h2>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End section navbar -->
-
-
-    <!-- start section menu vertical -->
-    <div class="nav-styletwo sq-price">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <div class="mylogo">
-                    <a class="logo" href="index.html"><img src="assets/images/logo-sidebar.png" alt="Logo bayra"></a>
-                </div>
-                <button class="menu-toggle navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#fullheader" data-text="about" data-scroll-nav="0">home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about" data-text="about" data-scroll-nav="1">about</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#services" data-text="Services" data-scroll-nav="2">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#portfolio" data-text="Portfolio" data-scroll-nav="3">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#team" data-text="team" data-scroll-nav="4">team</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#journal" data-text="news" data-scroll-nav="5">news</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact" data-text="Contact" data-scroll-nav="6">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </div>
-    <!-- start section menu vertical -->
-
-
-    <!-- Start section Page Title -->
-    <div class="page-title" id="page-title">
-        <div class="overlay">
-            <div class="container">
-                <div class="content">
-                    <h2>Blog Single</h2>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html">Home</a></li>
-                        <li class="two"><a href="blog.html">Blog</a></li>
-                        <li>Blog Single</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End section Page Title -->
-
-
-    <!-- Start section Blog single -->
-    <div class="blog-details blog" id="blog">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-sm-12">
-                    <div class="blog-single">
-                        <div class="post">
-                            <!-- Post Image -->
-                            <div class="post-img">
-                                <img src="assets/images/5.jpg" class="img-fluid" alt="">
-                            </div>
-                            <!-- Post Content -->
-                            <div class="post-content">
-                                <div class="post-date">08 Jan 2020</div>
-                                <div class="post-title">
-                                    <a href="blog-single.html" target="_blank">
-                                        <h4 class="maintitle">Create a wordpress theme</h4>
-                                    </a>
-                                </div>
-                                <div class="post-text">
-                                    <p class="separator">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua...</p>
-                                </div>
-                                <div class="more-details">
-                                    <div class="row">
-                                        <div class="col-sm-6 col-xs-12">
-                                            <div class="image">
-                                                <img src="assets/images/5.jpg" class="img-fluid" alt="">
-                                            </div>
-                                        </div>
-                                        <div class="col-sm-6 col-xs-12">
-                                            <p class="separator">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua. enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                            </p>
-                                            <p class="separator">Excepteur sint ocacat cupidatat non proi dent sunt in culpa qui officia.</p>
-                                        </div>
-                                    </div>
-                                    <p class="separator">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua. enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                        consequat.
-                                    </p>
-                                    <blockquote>
-                                        <i class="fa fa-quote-right"></i>
-                                        <p class="separator">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua. enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                            consequat.
-                                        </p>
-                                    </blockquote>
-                                    <p class="separator">Excepteur sint ocacat cupidatat non proi dent sunt in culpa qui officia deserunt.mollit anim id est laborum. sed ut pers piciatis unde omnis iste natus sit voluptatem accusantiu doloremque laudantium, totam rem aperiam,
-                                        eaque ipsa quae.
-                                    </p>
-                                </div>
-                                <div class="post-footer">
-                                    <div class="post-share">
-                                        <h5>Share The Post</h5>
-                                        <ul class="list-unstyled social-media">
-                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-                                            <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="post-tags">
-                                        <h5>Tags</h5>
-                                        <ul class="tags-list list-unstyled">
-                                            <li>
-                                                <a href="#">design</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">development</a>
-                                            </li>
-                                            <li>
-                                                <a href="#">wordpress</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="post-comments">
-                                    <h3>03 Comments</h3>
-                                    <div class="post-comment">
-                                        <div class="row">
-                                            <div class="col-sm-2">
-                                                <div class="comment-image">
-                                                    <img src="https://hasnaadesign.ga/Ozod/images/comments/1.jpg" class="img-fluid" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-10">
-                                                <h4>Nihan Doe</h4>
-                                                <span>08 Jan, 2020</span>
-                                                <a class="reply-btn" href="#"><i class="fa fa-reply"></i>Reply</a>
-                                                <p class="separator">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua. enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                                                    ea commodo consequat.
+                                <div class="container">
+                                    <div class="timeline">
+                                        <!-- Timeline Item 1: Freelance Software Engineer -->
+                                        <div class="timeline-item right">
+                                            <div class="timeline-date">January 2022 - Present</div>
+                                            <div class="timeline-content">
+                                                <h3>Freelance Software Engineer | Self-Employed</h3>
+                                                <p>
+                                                    <strong>High-Quality Code & Feature Development</strong><br>
+                                                    Designed and built mobile and web applications using Python for
+                                                    backend services, React
+                                                    for dynamic web interfaces, and Flutter for cross-platform mobile
+                                                    development. Delivered
+                                                    solutions that increased user engagement by 20% and reduced
+                                                    application load times by
+                                                    35%.
+                                                </p>
+                                                <p>
+                                                    <strong>Deployment & CI/CD</strong><br>
+                                                    Deployed applications seamlessly on Netlify and GitHub Pages by
+                                                    integrating CI/CD
+                                                    pipelines, employing test-driven development and robust
+                                                    unit/integration
+                                                    tests—decreasing post-deployment issues by 40%.
+                                                </p>
+                                                <p>
+                                                    <strong>Cloud Infrastructure</strong><br>
+                                                    Utilized Terraform to configure and manage cloud environments,
+                                                    reducing deployment time
+                                                    by 50%.
+                                                </p>
+                                                <p>
+                                                    <strong>Testing, Documentation & Debugging</strong><br>
+                                                    Developed comprehensive testing suites and detailed documentation
+                                                    that reduced
+                                                    onboarding time by 25% while achieving 99% uptime.
+                                                </p>
+                                                <p>
+                                                    <strong>Peer Code Reviews & Continuous Improvement</strong><br>
+                                                    Conducted code reviews to uphold best practices and improve
+                                                    efficiency by 20%.
                                                 </p>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="post-comment reply">
-                                        <div class="row">
-                                            <div class="col-sm-2">
-                                                <div class="comment-image">
-                                                    <img src="https://hasnaadesign.ga/Ozod/images/comments/2.jpg" class="img-fluid" alt="">
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-10">
-                                                <h4>Razan Smith</h4>
-                                                <span>08 Jan, 2020</span>
-                                                <a class="reply-btn" href="#"><i class="fa fa-reply"></i>Reply</a>
-                                                <p class="separator">Excepteur sint ocacat cupidatat non proi dent sunt in culpa qui officia deserunt.mollit anim id est laborum. sed ut.</p>
+
+                                        <!-- Timeline Item 2: United Nations Environment Program -->
+                                        <div class="timeline-item left">
+                                            <div class="timeline-date">January 2019 - November 2021</div>
+                                            <div class="timeline-content">
+                                                <h3>United Nations Environment Program | Software Engineer</h3>
+                                                <p>
+                                                    <strong>Client-Facing Interface Design</strong><br>
+                                                    Designed an intuitive interface featuring advanced search
+                                                    capabilities, increasing
+                                                    public accessibility by 60%.
+                                                </p>
+                                                <p>
+                                                    <strong>UN Ozone Secretariat Website & Mobile App</strong><br>
+                                                    Contributed to a Drupal-based website and mobile app with real-time
+                                                    data features and
+                                                    robust security measures, enhancing data access efficiency by 40%.
+                                                </p>
+                                                <p>
+                                                    <strong>Cross-Functional Collaboration</strong><br>
+                                                    Collaborated with multiple teams to deliver scalable solutions that
+                                                    optimized data
+                                                    management processes and system interoperability.
+                                                </p>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="post-comment">
-                                        <div class="row">
-                                            <div class="col-sm-2">
-                                                <div class="comment-image">
-                                                    <img src="https://hasnaadesign.ga/Ozod/images/comments/3.jpg" class="img-fluid" alt="">
-                                                </div>
+
+                                        <!-- Timeline Item 3: Microsoft Software Engineer -->
+                                        <div class="timeline-item right">
+                                            <div class="timeline-date">August 2016 - October 2018</div>
+                                            <div class="timeline-content">
+                                                <h3>Microsoft | Software Engineer – Windows Development Team</h3>
+                                                <p>
+                                                    <strong>Windows PhoneLink Development</strong><br>
+                                                    Developed and optimized the Windows PhoneLink application using C#
+                                                    and XAML, reducing
+                                                    latency by 20% and enhancing user responsiveness.
+                                                </p>
+                                                <p>
+                                                    <strong>Cross-Functional Collaboration</strong><br>
+                                                    Worked alongside UI/UX designers and product teams to integrate user
+                                                    feedback and refine
+                                                    the overall design and functionality.
+                                                </p>
+                                                <p>
+                                                    <strong>Feature Implementation</strong><br>
+                                                    Designed and implemented new Windows features while following modern
+                                                    software design
+                                                    patterns, contributing to system upgrades and boosting user
+                                                    engagement.
+                                                </p>
+                                                <p>
+                                                    <strong>Agile Delivery</strong><br>
+                                                    Leveraged agile methodologies to achieve a 15% performance boost
+                                                    through iterative
+                                                    development and timely feature enhancements.
+                                                </p>
                                             </div>
-                                            <div class="col-sm-10">
-                                                <h4>Karim Doe</h4>
-                                                <span>08 Jan, 2020</span>
-                                                <a class="reply-btn" href="#"><i class="fa fa-reply"></i>Reply</a>
-                                                <p class="separator">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labore et dolore magna aliqua. enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                                                    ea commodo consequat.
+                                        </div>
+
+                                        <!-- Timeline Item 4: Microsoft Software Engineer Intern -->
+                                        <div class="timeline-item left">
+                                            <div class="timeline-date">August 2015 - July 2016</div>
+                                            <div class="timeline-content">
+                                                <h3>Microsoft | Software Engineer Intern – Azure Development Team</h3>
+                                                <p>
+                                                    <strong>Cloud API & Microservices Development</strong><br>
+                                                    Developed robust APIs and microservices with C# (.NET Core),
+                                                    boosting system throughput
+                                                    by 15% and enhancing scalability.
+                                                </p>
+                                                <p>
+                                                    <strong>Scalability Testing & Performance Optimization</strong><br>
+                                                    Designed and executed scalability tests using Azure Load Testing and
+                                                    k6, reducing
+                                                    response times by 20%.
+                                                </p>
+                                                <p>
+                                                    <strong>Python Automation & DevOps</strong><br>
+                                                    Automated deployment pipelines and monitoring using Python, reducing
+                                                    manual
+                                                    interventions by 30% and improving consistency.
+                                                </p>
+                                                <p>
+                                                    <strong>Debugging & AI Integration</strong><br>
+                                                    Utilized Azure Monitor for issue resolution and contributed to AI
+                                                    integrations that
+                                                    improved model accuracy by 15%.
+                                                </p>
+                                                <p>
+                                                    <strong>Agile Collaboration</strong><br>
+                                                    Participated in daily sprints and code reviews, ensuring high code
+                                                    quality and a
+                                                    reduction in technical debt.
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="post-form">
-                                    <h3>Leave a Comment</h3>
-                                    <form action="#" method="post">
-                                        <div class="row">
-                                            <div class="col-sm-6 col-xs-12">
-                                                <div class="form-group">
-                                                    <input type="text" class="form-control" name="name" placeholder="Name" required>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-6 col-xs-12">
-                                                <div class="form-group">
-                                                    <input type="email" class="form-control" name="email" placeholder="Email" required>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-12 col-xs-12">
-                                                <div class="form-group">
-                                                    <textarea class="form-control" rows="6" name="message" placeholder="Your Comment" required></textarea>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-12 col-xs-12">
-                                                <button class="main-btn btn btn-default hvr-shutter-in-horizontal" type="submit" name="comment">Submit Comment</button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-12">
-                    <div class="blog-sidebar">
-                        <div class="sidebar-search">
-                            <form action="#" method="post">
-                                <div class="form-group">
-                                    <input type="search" class="form-control" name="search-field" placeholder="Search.." required>
-                                    <button class="search-btn" type="submit"><i class="fa fa-search"></i></button>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="sidebar-categories">
-                            <h4 class="maintitle">Categories</h4>
-                            <ul class="categories-list list-unstyled">
-                                <li>
-                                    <a href="#">Web Design <span>16</span></a>
-                                </li>
-                                <li>
-                                    <a href="#">Web Development <span>20</span></a>
-                                </li>
-                                <li>
-                                    <a href="#">UI &amp; UX Design <span>14</span></a>
-                                </li>
-                                <li>
-                                    <a href="#">Photography <span>08</span></a>
-                                </li>
-                                <li>
-                                    <a href="#">Marketing <span>13</span></a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="sidebar-posts">
-                            <h4 class="maintitle">Latest Post</h4>
-                            <div class="post-inner">
-                                <div class="post-image">
-                                    <img class="img-fluid" src="https://hasnaadesign.ga/Ozod/images/blog/2.jpg" alt>
-                                </div>
-                                <div class="post-info">
-                                    <h5><a href="#">Top Graphic Design Topics</a></h5>
-                                    <p class="separator">08 Jan, 2020</p>
-                                </div>
-                            </div>
-                            <div class="post-inner">
-                                <div class="post-image">
-                                    <img class="img-fluid" src="https://hasnaadesign.ga/Ozod/images/blog/3.jpg" alt>
-                                </div>
-                                <div class="post-info">
-                                    <h5><a href="#">How to create great logo for your business</a></h5>
-                                    <p class="separator">08 Jan, 2020</p>
-                                </div>
-                            </div>
-                            <div class="post-inner">
-                                <div class="post-image">
-                                    <img class="img-fluid" src="https://hasnaadesign.ga/Ozod/images/blog/4.jpg" alt>
-                                </div>
-                                <div class="post-info">
-                                    <h5><a href="#">How to become a successful freelancer</a></h5>
-                                    <p class="separator">08 Jan, 2020</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="sidebar-archives">
-                            <h4 class="maintitle">Archives</h4>
-                            <ul class="archives-list list-unstyled">
-                                <li>
-                                    <a href="#">oct 2019</a>
-                                </li>
-                                <li>
-                                    <a href="#">Nov 2019</a>
-                                </li>
-                                <li>
-                                    <a href="#">Dec 2019</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="sidebar-tags">
-                            <h4 class="maintitle">Tags</h4>
-                            <ul class="tags-list list-unstyled">
-                                <li>
-                                    <a href="#">design</a>
-                                </li>
-                                <li>
-                                    <a href="#">development</a>
-                                </li>
-                                <li>
-                                    <a href="#">marketing</a>
-                                </li>
-                                <li>
-                                    <a href="#">wordpress</a>
-                                </li>
-                                <li>
-                                    <a href="#">seo</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- End section Blog single -->
+                        </main>
 
-
-    <!-- start section footer -->
-    <div id="footer" class="text-center">
-        <div class="container ">
-            <div class="row">
-                <div class="col-md-12 col-lg-6">
-                    <div class="copyright">
-                        <span>&copy; Copyrights uxign 2020. All rights reserved.</span>
-                    </div>
-                </div>
-                <div class="col-md-12 col-lg-6 initialdisp">
-                    <div id="news" class="news">
-                        <form id='subscribe' method='post' class="form-inline">
-                            <span>Newsletter Signup</span>
-                            <div class="form-group">
-                                <input type='hidden' name='form-name' value='subscribe' />
-                                <input type="text" class="enter-email email form-control" name="mce-EMAIL" id="mce-EMAIL" placeholder="Email" spellcheck="false" />
-                                <button type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-default submit button btn btn-blue signup-button">
-                                    <i class="fa fa-envelope"></i>
-                                    </button>
-                            </div>
-                            <!-- Notification -->
-                            <div id="mce-responses" class="alert esconder">
-                                <label for="mce-EMAIL" class="subscribe-message"></label>
-                                <div id="close" class="btn-close">X</div>
-                            </div>
-                            <!-- EndNotification -->
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="line"></div>
-    </div>
-    <!-- End section footer -->
-
-
-    <!-- start overlay nav -->
-    <div class="cd-overlay-nav">
-        <span></span>
-    </div>
-    <div class="cd-overlay-content">
-        <span></span>
-    </div>
-    <!-- End overlay nav -->
-
-
-    <!-- start section theme option -->
-    <div class="sidebar-contet">
-        <div class="contentsidebar">
-            <div class="themecolor mb-10">
-                <h4 class="maintitle">theme color</h4>
-                <ul class="list-unstyled list-sidebar list-color">
-                    <li><span data-color="default"></span></li>
-                    <li><span data-color="orange"></span></li>
-                    <li><span data-color="gold"></span></li>
-                    <li><span data-color="green"></span></li>
-                    <li><span data-color="blue"></span></li>
-                    <li><span data-color="purple"></span></li>
-                    <li><span data-color="yellow"></span></li>
-                    <li><span data-color="rose"></span></li>
-                </ul>
-            </div>
-            <div class="themecolor mb-30">
-                <h4 class="maintitle">Menu</h4>
-                <ul class="list-unstyled list-sidebar list-change-menu">
-                    <li><span class="btn overlay active">overlay</span></li>
-                    <li><span class="btn right">Right</span></li>
-                </ul>
-            </div>
-        </div>
-        <div class="mainicon sidebaricon">
-            <span class="fa fa-life-ring"></span>
-        </div>
-        <div class="mainicon btn-purchase">
-            <span class="fa fa-shopping-cart"></span>
-        </div>
-    </div>
-    <!-- End section theme option -->
-
-
-    <!-- Jquery -->
-    <script src="assets/js/jquery.js"></script>
-    <!-- popper -->
-    <script src="assets/js/popper.min.js"></script>
-    <!-- Bootstrap js -->
-    <script src="assets/js/bootstrap.min.js"></script>
-    <!-- Validate Mailichimp-->
-    <script src="assets/js/jquery.ajaxchimp.js"></script>
-    <!-- Navbar -->
-    <script src="assets/js/velocity.min.js"></script>
-    <script src="assets/js/navtoogle.js"></script>
-    <!-- Validate Form -->
-    <script src="assets/js/jquery.validate.js"></script>
-    <script src="assets/js/register.js"></script>
-    <!-- jquery.nicescroll.min js -->
-    <script src="assets/js/jquery.nicescroll.min.js"></script>
-    <!-- Main custom-->
-    <script src="assets/js/custom.js"></script>
-    <script language=JavaScript>
-        //Disable right mouse click Script
-        //By Geek Site.in
-
-
-        var message = "Function Disabled!";
-
-        ///////////////////////////////////
-        function clickIE4() {
-            if (event.button == 2) {
-                alert(message);
-                return false;
-            }
-        }
-
-        function clickNS4(e) {
-            if (document.layers || document.getElementById && !document.all) {
-                if (e.which == 2 || e.which == 3) {
-                    alert(message);
-                    return false;
-                }
-            }
-        }
-
-        if (document.layers) {
-            document.captureEvents(Event.MOUSEDOWN);
-            document.onmousedown = clickNS4;
-        } else if (document.all && !document.getElementById) {
-            document.onmousedown = clickIE4;
-        }
-
-        document.oncontextmenu = new Function("alert(message);return false")
-    </script>
-
-    <script>
-        document.onkeydown = function(e) {
-            if (event.keyCode == 123) {
-                return false;
-            }
-            if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
-                return false;
-            }
-            if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
-                return false;
-            }
-            if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
-                return false;
-            }
-            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
-                return false;
-            }
-        }
-    </script>
-
+                        <!-- scripts-->
+                        <script src="assets/js/jquery.js"></script>
+                        <script src="assets/js/popper.min.js"></script>
+                        <script src="assets/js/bootstrap.min.js"></script>
+                        <script src="assets/js/custom.js"></script>
 </body>
 
-
-<!-- Mirrored from bayra-html.inaikas.com/details.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 12 Mar 2025 07:11:05 GMT -->
 </html>

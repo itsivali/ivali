@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="Willis Ivali Resume – Experience Timeline">
+    <meta name="keywords"
+        content="Resume, Experience, Software Engineer, DevOps, Cloud, Terraform, Docker, Kubernetes, Flutter, Python, Go">
+    <meta name="author" content="Willis Ivali">
+    <title>Willis Ivali - Resume</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png" />
+    <!-- Site CSS -->
+    <link href="assets/css/main/homepages.css" rel="stylesheet">
+    <link href="assets/css/main/skins/default_color.css" rel="stylesheet">
+    <link href="assets/css/main/bg/default_bg.css" rel="stylesheet">
+    <link href="assets/css/main/homepages-rtl.css" rel="stylesheet">
+    <!-- Calendly widget assets loaded asynchronously (if needed) -->
+    <link rel="preconnect" href="https://assets.calendly.com">
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script async src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
+    <style>
+        /* Basic Timeline Styles */
+        .timeline {
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+
+        /* The vertical line */
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 6px;
+            background-color: #ddd;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -3px;
+        }
+
+        /* Container around content */
+        .timeline-item {
+            padding: 20px 30px;
+            position: relative;
+            background-color: inherit;
+            width: 50%;
+        }
+
+        /* Left timeline items */
+        .timeline-item.left {
+            left: 0;
+            text-align: right;
+        }
+
+        /* Right timeline items */
+        .timeline-item.right {
+            left: 50%;
+            text-align: left;
+        }
+
+        /* Timeline circles */
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            right: -10px;
+            background-color: white;
+            border: 4px solid #ff3d4f;
+            top: 30px;
+            border-radius: 50%;
+            z-index: 1;
+        }
+
+        .timeline-item.right::after {
+            left: -10px;
+        }
+
+        /* Date styling */
+        .timeline-date {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            color: #ff3d4f;
+        }
+
+        /* Content styling */
+        .timeline-content {
+            padding: 20px;
+            background: #f9f9f9;
+            position: relative;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .timeline-content h3 {
+            margin-top: 0;
+            font-family: "Saira", sans-serif;
+        }
+
+        .timeline-content p {
+            font-size: 14px;
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+
+        @media screen and (max-width: 768px) {
+
+            /* For mobile, make timeline items full-width */
+            .timeline::after {
+                left: 31px;
+            }
+
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+
+            .timeline-item.left,
+            .timeline-item.right {
+                left: 0;
+                text-align: left;
+            }
+
+            .timeline-item::after {
+                left: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- cursor start -->
+    <div class="cursor"></div>
+    <!-- End cursor -->
+
+    <!-- start section navbar -->
+    <div class="navbar-wrapper none-sq-price">
+        <div class="navfixed">
+            <div class="container">
+                <div class="fullcontainer">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="mylogo">
+                                <a class="logo logo-light" href="index.html">
+                                    <img src="assets/images/logo-sidebar.png" alt="Willis Ivali">
+                                </a>
+                                <a class="logo logo-dark" href="index.html">
+                                    <img src="assets/images/logo-sidebar.png" alt="Willis Ivali">
+                                </a>
+                            </div>
+                            <div class="iconfix">
+                                <a href="#" class="cd-nav-trigger" onclick="return false;">Menu<span
+                                        class="cd-icon"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mainmenunav">
+            <div class="cd-primary-nav">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <nav class="navbar navbar-expand-lg">
+                                <div class="navbar-collapse">
+                                    <ul class="navbar-nav list-unstyled">
+                                        <li class="nav-item">
+                                            <p>01</p>
+                                            <a class="nav-link active2" href="#about">about</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <p>02</p>
+                                            <a class="nav-link" href="#services">Services</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <p>03</p>
+                                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <p>04</p>
+                                            <a class="nav-link" href="resume.html">Resume</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <p>05</p>
+                                            <a class="nav-link" href="#contact">Contact</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Resume Section -->
+    <main class="cd-content content">
+        <div id="resume" class="text-center pt-90">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Resume</h2>
+                </div>
+            </div>
+            <div class="container">
+                <div class="timeline">
+                    <!-- Timeline Item 1: Freelance Software Engineer -->
+                    <div class="timeline-item right">
+                        <div class="timeline-date">January 2022 - Present</div>
+                        <div class="timeline-content">
+                            <h3>Freelance Software Engineer | Self-Employed</h3>
+                            <p>
+                                <strong>High-Quality Code & Feature Development</strong><br>
+                                Designed and built mobile and web applications using Python for backend services, React
+                                for dynamic web interfaces,
+                                and Flutter for cross-platform mobile development. Delivered solutions that increased
+                                user engagement by 20% and reduced
+                                application load times by 35%.
+                            </p>
+                            <p>
+                                <strong>Deployment & CI/CD</strong><br>
+                                Deployed applications seamlessly on Netlify and GitHub Pages by integrating CI/CD
+                                pipelines, employing test-driven
+                                development and robust unit/integration tests—decreasing post-deployment issues by 40%.
+                            </p>
+                            <p>
+                                <strong>Cloud Infrastructure</strong><br>
+                                Utilized Terraform to configure and manage cloud environments, reducing deployment time
+                                by 50%.
+                            </p>
+                            <p>
+                                <strong>Testing, Documentation & Debugging</strong><br>
+                                Developed comprehensive testing suites and detailed documentation that reduced
+                                onboarding time by 25% while achieving
+                                99% uptime.
+                            </p>
+                            <p>
+                                <strong>Peer Code Reviews & Continuous Improvement</strong><br>
+                                Conducted code reviews to uphold best practices and improve efficiency by 20%.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 2: United Nations Environment Program -->
+                    <div class="timeline-item left">
+                        <div class="timeline-date">January 2019 - November 2021</div>
+                        <div class="timeline-content">
+                            <h3>United Nations Environment Program | Software Engineer</h3>
+                            <p>
+                                <strong>Client-Facing Interface Design</strong><br>
+                                Designed an intuitive interface featuring advanced search capabilities, increasing
+                                public accessibility by 60%.
+                            </p>
+                            <p>
+                                <strong>UN Ozone Secretariat Website & Mobile App</strong><br>
+                                Contributed to a Drupal-based website and mobile app with real-time data features and
+                                robust security measures,
+                                enhancing data access efficiency by 40%.
+                            </p>
+                            <p>
+                                <strong>Cross-Functional Collaboration</strong><br>
+                                Collaborated with multiple teams to deliver scalable solutions that optimized data
+                                management processes and system interoperability.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 3: Microsoft Software Engineer -->
+                    <div class="timeline-item right">
+                        <div class="timeline-date">August 2016 - October 2018</div>
+                        <div class="timeline-content">
+                            <h3>Microsoft | Software Engineer – Windows Development Team</h3>
+                            <p>
+                                <strong>Windows PhoneLink Development</strong><br>
+                                Developed and optimized the Windows PhoneLink application using C# and XAML, reducing
+                                latency by 20% and enhancing user responsiveness.
+                            </p>
+                            <p>
+                                <strong>Cross-Functional Collaboration</strong><br>
+                                Worked alongside UI/UX designers and product teams to integrate user feedback and refine
+                                the overall design and functionality.
+                            </p>
+                            <p>
+                                <strong>Feature Implementation</strong><br>
+                                Designed and implemented new Windows features while following modern software design
+                                patterns, contributing to system upgrades and boosting user engagement.
+                            </p>
+                            <p>
+                                <strong>Agile Delivery</strong><br>
+                                Leveraged agile methodologies to achieve a 15% performance boost through iterative
+                                development and timely feature enhancements.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Item 4: Microsoft Software Engineer Intern -->
+                    <div class="timeline-item left">
+                        <div class="timeline-date">August 2015 - July 2016</div>
+                        <div class="timeline-content">
+                            <h3>Microsoft | Software Engineer Intern – Azure Development Team</h3>
+                            <p>
+                                <strong>Cloud API & Microservices Development</strong><br>
+                                Developed robust APIs and microservices with C# (.NET Core), boosting system throughput
+                                by 15% and enhancing scalability.
+                            </p>
+                            <p>
+                                <strong>Scalability Testing & Performance Optimization</strong><br>
+                                Designed and executed scalability tests using Azure Load Testing and k6, reducing
+                                response times by 20%.
+                            </p>
+                            <p>
+                                <strong>Python Automation & DevOps</strong><br>
+                                Automated deployment pipelines and monitoring using Python, reducing manual
+                                interventions by 30% and improving consistency.
+                            </p>
+                            <p>
+                                <strong>Debugging & AI Integration</strong><br>
+                                Utilized Azure Monitor for issue resolution and contributed to AI integrations that
+                                improved model accuracy by 15%.
+                            </p>
+                            <p>
+                                <strong>Agile Collaboration</strong><br>
+                                Participated in daily sprints and code reviews, ensuring high code quality and a
+                                reduction in technical debt.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+
+    <!-- Disable right-click context menu -->
+    <script>
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+    </script>
+</body>
+
+</html>
