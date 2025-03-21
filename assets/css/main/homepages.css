@@ -4097,7 +4097,12 @@ span#typed-slide-1 {
   animation-delay: 4.2s;
   margin: 0;
 }
-
+ .btn-container {
+   display: flex;
+   justify-content: space-between;
+   margin: 20px 0;
+   /* adjust as needed */
+ }
 /************************** 
 * services
 ***************************/
