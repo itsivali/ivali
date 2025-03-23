@@ -1,0 +1,143 @@
+/* Timeline container */
+.timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* The vertical line */
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    background-color: #ff3d4f;
+    top: 0;
+    bottom: 0;
+    right: 50%;
+    margin-right: -3px;
+}
+
+/* Container around content */
+.timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+    right: 0;
+}
+
+/* The circles on the timeline */
+.timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -13px;
+    background-color: white;
+    border: 4px solid #ff3d4f;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Place the container to the right */
+.timeline-item:nth-child(even) {
+    right: 50%;
+}
+
+/* Add arrows to the right container */
+.timeline-item:nth-child(odd)::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid #555;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent #555;
+}
+
+/* Add arrows to the left container */
+.timeline-item:nth-child(even)::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid #555;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #555 transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.timeline-item:nth-child(even)::after {
+    left: -12px;
+}
+
+/* The actual content */
+.timeline-content {
+    padding: 20px 30px;
+    background-color: #555;
+    color: white;
+    position: relative;
+    border-radius: 6px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Timeline date styling */
+.timeline-date {
+    color: #ff3d4f;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Content headings */
+.timeline-content h3 {
+    margin-top: 0;
+    color: white;
+    font-size: 20px;
+}
+
+/* Hover effect on cards */
+.timeline-content:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 768px) {
+
+    /* Place the timeline to the right */
+    .timeline::after {
+        right: 31px;
+    }
+
+    /* Full-width containers */
+    .timeline-item {
+        width: 100%;
+        padding-right: 70px;
+        padding-left: 25px;
+    }
+
+    /* Make sure all circles are at the same spot */
+    .timeline-item::after {
+        right: 15px;
+    }
+
+    .timeline-item:nth-child(even) {
+        right: 0%;
+    }
+
+    /* Make all arrows point rightwards */
+    .timeline-item::before {
+        right: 60px;
+        border: medium solid #555;
+        border-width: 10px 0 10px 10px;
+        border-color: transparent transparent transparent #555;
+    }
+}
