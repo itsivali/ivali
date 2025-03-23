@@ -22,105 +22,46 @@
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     <script async src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
     <style>
-        /* Basic Timeline Styles */
-        .timeline {
-            position: relative;
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 40px 0;
-        }
+        /* Make the timeline container scrollable (adjust max-height as needed) */
+.timeline {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 40px 0;
+  overflow-y: auto;
+  max-height: 80vh; /* Adjust height, so long timelines become scrollable */
+}
 
-        /* The vertical line */
-        .timeline::after {
-            content: '';
-            position: absolute;
-            width: 6px;
-            background-color: #ddd;
-            top: 0;
-            bottom: 0;
-            left: 50%;
-            margin-left: -3px;
-        }
+/* Update each timeline card */
+.timeline-content {
+  padding: 20px;
+  background-color: #555; /* Grey background */
+  color: #fff;  /* White text */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2); /* Subtle shadow */
+  position: relative;
+}
 
-        /* Container around content */
-        .timeline-item {
-            padding: 20px 30px;
-            position: relative;
-            background-color: inherit;
-            width: 50%;
-        }
+/* Optional: Adjust the date styling if needed */
+.timeline-date {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ff3d4f; /* Accent color */
+}
 
-        /* Left timeline items */
-        .timeline-item.left {
-            left: 0;
-            text-align: right;
-        }
-
-        /* Right timeline items */
-        .timeline-item.right {
-            left: 50%;
-            text-align: left;
-        }
-
-        /* Timeline circles */
-        .timeline-item::after {
-            content: '';
-            position: absolute;
-            width: 20px;
-            height: 20px;
-            right: -10px;
-            background-color: white;
-            border: 4px solid #ff3d4f;
-            top: 30px;
-            border-radius: 50%;
-            z-index: 1;
-        }
-
-        .timeline-item.right::after {
-            left: -10px;
-        }
-
-        /* Date styling */
-        .timeline-date {
-            font-size: 14px;
-            font-weight: bold;
-            margin-bottom: 10px;
-            color: #ff3d4f;
-        }
-
-        /* Content styling */
-        .timeline-content {
-            padding: 20px;
-            background: #f9f9f9;
-            position: relative;
-            border-radius: 6px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        .timeline-content h3 {
-            margin-top: 0;
-            font-family: "Saira", sans-serif;
-        }
-
-        .timeline-content p {
-            font-size: 14px;
-            line-height: 1.6;
-            margin: 10px 0;
-        }
-
-        @media screen and (max-width: 768px) {
-
-            /* For mobile, make timeline items full-width */
-            .timeline::after {
-                left: 31px;
-            }
-
-            .timeline-item {
-                width: 100%;
-                padding-left: 70px;
-                padding-right: 25px;
-            }
-
+/* Ensure responsiveness on mobile */
+@media screen and (max-width: 768px) {
+  .timeline {
+    max-height: none;
+  }
+  
+  .timeline-item {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+}
             .timeline-item.left,
             .timeline-item.right {
                 left: 0;
@@ -130,7 +71,7 @@
             .timeline-item::after {
                 left: 18px;
             }
-        }
+        
     </style>
 </head>
 
