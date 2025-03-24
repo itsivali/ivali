@@ -135,6 +135,21 @@ a:focus,
 #portfolio .portfolio-item .portfolio-thumbnail .overlay,
 #portfolio .portfolio-item .portfolio-thumbnail .overlay:hover,
 #portfolio .portfolio-item .portfolio-thumbnail .botom-thumbnail,
+
+#resume {
+    position: relative;
+    width: 100%;
+    overflow: visible;
+}
+
+.container {
+    position: relative;
+    overflow: visible;
+}
+
+.section-title {
+    margin-bottom: 40px;
+}
 #resume .resume-info:before,
 #resume .resume-info:hover:before,
 resume resumeiteam:hover .imgteam img,
