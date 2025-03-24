@@ -1,0 +1,84 @@
+/* Scrollable container: full viewport height */
+.scroll-container {
+    height: 100vh;
+    overflow-y: auto;
+}
+
+/* General resets and container styling */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: #1a1a1a;
+    font-family: Arial, sans-serif;
+    color: #e0e0e0;
+}
+
+/* Container for resume content */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Section title */
+.section-title h2 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+/* Card Grid: using CSS grid to layout cards in quadrants */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+/* Card styling for resume items */
+.card {
+    background: #333;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Card date, title and content */
+.card-date {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #ff3d4f;
+    margin-bottom: 10px;
+}
+
+.card-title {
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.card-content p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.card-content strong {
+    color: #ff3d4f;
+    font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    .card-grid {
+        gap: 10px;
+    }
+
+    .card-title {
+        font-size: 18px;
+    }
+
+    .card-date {
+        font-size: 1em;
+    }
+}
