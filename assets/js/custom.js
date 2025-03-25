@@ -8,7 +8,7 @@ $(function() {
 
     'use strict';
     var typed = new Typed('#typed-slide-1', {
-        strings: ['Quiet Innovator', 'Backend Engineer' , 'API Builder' ,'Azure DevOps Engineer' , 'Life Long Learner'],
+        strings: ['Quiet Innovator', 'Backend Engineer' , 'API Builder' ,'GCP DevOps Engineer' , 'Life Long Learner'],
         typeSpeed: 60,
         backSpeed: 60,
         loop: true
