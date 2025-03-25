@@ -135,30 +135,15 @@ a:focus,
 #portfolio .portfolio-item .portfolio-thumbnail .overlay,
 #portfolio .portfolio-item .portfolio-thumbnail .overlay:hover,
 #portfolio .portfolio-item .portfolio-thumbnail .botom-thumbnail,
-
-#resume {
-    position: relative;
-    width: 100%;
-    overflow: visible;
-}
-
-.container {
-    position: relative;
-    overflow: visible;
-}
-
-.section-title {
-    margin-bottom: 40px;
-}
 #resume .resume-info:before,
 #resume .resume-info:hover:before,
-resume resumeiteam:hover .imgteam img,
-resume resumeiteam:hover .socials-media,
-resume resumeiteam .imgteam,
-resume resumeiteam .imgteam img,
-resume resumeiteam .imgteam .socials-media,
-resume resumeiteam .imgteam .socials-media ul li,
-resume resumeiteam .imgteam .socials-media ul li:hover,
+.team .teamiteam:hover .imgteam img,
+.team .teamiteam:hover .socials-media,
+.team .teamiteam .imgteam,
+.team .teamiteam .imgteam img,
+.team .teamiteam .imgteam .socials-media,
+.team .teamiteam .imgteam .socials-media ul li,
+.team .teamiteam .imgteam .socials-media ul li:hover,
 .snip1 *,
 .snip1:after,
 #contact .socials-media ul li,
@@ -291,13 +276,13 @@ a:focus,
 #portfolio .portfolio-item .portfolio-thumbnail .botom-thumbnail,
 #resume .resume-info:before,
 #resume .resume-info:hover:before,
-resume resumeiteam:hover .imgteam img,
-resume resumeiteam:hover .socials-media,
-resume resumeiteam .imgteam,
-resume resumeiteam .imgteam img,
-resume resumeiteam .imgteam .socials-media,
-resume resumeiteam .imgteam .socials-media ul li,
-resume resumeiteam .imgteam .socials-media ul li:hover,
+.team .teamiteam:hover .imgteam img,
+.team .teamiteam:hover .socials-media,
+.team .teamiteam .imgteam,
+.team .teamiteam .imgteam img,
+.team .teamiteam .imgteam .socials-media,
+.team .teamiteam .imgteam .socials-media ul li,
+.team .teamiteam .imgteam .socials-media ul li:hover,
 .snip1 *,
 .snip1:after,
 #contact .socials-media ul li,
@@ -354,7 +339,7 @@ body {
 ***************************/
 body {
   font-family: "Nunito";
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   color: #e0e0e0;
   line-height: 1.9;
@@ -447,13 +432,13 @@ a:focus,
 #portfolio .portfolio-item .portfolio-thumbnail .botom-thumbnail,
 #resume .resume-info:before,
 #resume .resume-info:hover:before,
-resume resumeiteam:hover .imgteam img,
-resume resumeiteam:hover .socials-media,
-resume resumeiteam .imgteam,
-resume resumeiteam .imgteam img,
-resume resumeiteam .imgteam .socials-media,
-resume resumeiteam .imgteam .socials-media ul li,
-resume resumeiteam .imgteam .socials-media ul li:hover,
+.team .teamiteam:hover .imgteam img,
+.team .teamiteam:hover .socials-media,
+.team .teamiteam .imgteam,
+.team .teamiteam .imgteam img,
+.team .teamiteam .imgteam .socials-media,
+.team .teamiteam .imgteam .socials-media ul li,
+.team .teamiteam .imgteam .socials-media ul li:hover,
 .snip1 *,
 .snip1:after,
 #contact .socials-media ul li,
@@ -800,13 +785,13 @@ a:focus,
 #portfolio .portfolio-item .portfolio-thumbnail .botom-thumbnail,
 #resume .resume-info:before,
 #resume .resume-info:hover:before,
-resume resumeiteam:hover .imgteam img,
-resume resumeiteam:hover .socials-media,
-resume resumeiteam .imgteam,
-resume resumeiteam .imgteam img,
-resume resumeiteam .imgteam .socials-media,
-resume resumeiteam .imgteam .socials-media ul li,
-resume resumeiteam .imgteam .socials-media ul li:hover,
+.team .teamiteam:hover .imgteam img,
+.team .teamiteam:hover .socials-media,
+.team .teamiteam .imgteam,
+.team .teamiteam .imgteam img,
+.team .teamiteam .imgteam .socials-media,
+.team .teamiteam .imgteam .socials-media ul li,
+.team .teamiteam .imgteam .socials-media ul li:hover,
 .snip1 *,
 .snip1:after,
 #contact .socials-media ul li,
@@ -1029,13 +1014,13 @@ a:focus,
 #portfolio .portfolio-item .portfolio-thumbnail .botom-thumbnail,
 #resume .resume-info:before,
 #resume .resume-info:hover:before,
-resume resumeiteam:hover .imgteam img,
-resume resumeiteam:hover .socials-media,
-resume resumeiteam .imgteam,
-resume resumeiteam .imgteam img,
-resume resumeiteam .imgteam .socials-media,
-resume resumeiteam .imgteam .socials-media ul li,
-resume resumeiteam .imgteam .socials-media ul li:hover,
+.team .teamiteam:hover .imgteam img,
+.team .teamiteam:hover .socials-media,
+.team .teamiteam .imgteam,
+.team .teamiteam .imgteam img,
+.team .teamiteam .imgteam .socials-media,
+.team .teamiteam .imgteam .socials-media ul li,
+.team .teamiteam .imgteam .socials-media ul li:hover,
 .snip1 *,
 .snip1:after,
 #contact .socials-media ul li,
@@ -1207,13 +1192,13 @@ a:focus,
 #portfolio .portfolio-item .portfolio-thumbnail .botom-thumbnail,
 #resume .resume-info:before,
 #resume .resume-info:hover:before,
-resume resumeiteam:hover .imgteam img,
-resume resumeiteam:hover .socials-media,
-resume resumeiteam .imgteam,
-resume resumeiteam .imgteam img,
-resume resumeiteam .imgteam .socials-media,
-resume resumeiteam .imgteam .socials-media ul li,
-resume resumeiteam .imgteam .socials-media ul li:hover,
+.team .teamiteam:hover .imgteam img,
+.team .teamiteam:hover .socials-media,
+.team .teamiteam .imgteam,
+.team .teamiteam .imgteam img,
+.team .teamiteam .imgteam .socials-media,
+.team .teamiteam .imgteam .socials-media ul li,
+.team .teamiteam .imgteam .socials-media ul li:hover,
 .snip1 *,
 .snip1:after,
 #contact .socials-media ul li,
@@ -1287,14 +1272,6 @@ body {
   height: 70px;
   position: fixed;
   left: 0;
-}
-
-
-.navbar-wrapper,
-.navfixed,
-.mainmenunav {
-  background: transparent !important;
-  box-shadow: none !important;
 }
 
 .navbar-wrapper .navfixed .container {
@@ -1815,13 +1792,13 @@ a:focus,
 #portfolio .portfolio-item .portfolio-thumbnail .botom-thumbnail,
 #resume .resume-info:before,
 #resume .resume-info:hover:before,
-resume resumeiteam:hover .imgteam img,
-resume resumeiteam:hover .socials-media,
-resume resumeiteam .imgteam,
-resume resumeiteam .imgteam img,
-resume resumeiteam .imgteam .socials-media,
-resume resumeiteam .imgteam .socials-media ul li,
-resume resumeiteam .imgteam .socials-media ul li:hover,
+.team .teamiteam:hover .imgteam img,
+.team .teamiteam:hover .socials-media,
+.team .teamiteam .imgteam,
+.team .teamiteam .imgteam img,
+.team .teamiteam .imgteam .socials-media,
+.team .teamiteam .imgteam .socials-media ul li,
+.team .teamiteam .imgteam .socials-media ul li:hover,
 .snip1 *,
 .snip1:after,
 #contact .socials-media ul li,
@@ -2092,13 +2069,13 @@ a:focus,
 #portfolio .portfolio-item .portfolio-thumbnail .botom-thumbnail,
 #resume .resume-info:before,
 #resume .resume-info:hover:before,
-resume resumeiteam:hover .imgteam img,
-resume resumeiteam:hover .socials-media,
-resume resumeiteam .imgteam,
-resume resumeiteam .imgteam img,
-resume resumeiteam .imgteam .socials-media,
-resume resumeiteam .imgteam .socials-media ul li,
-resume resumeiteam .imgteam .socials-media ul li:hover,
+.team .teamiteam:hover .imgteam img,
+.team .teamiteam:hover .socials-media,
+.team .teamiteam .imgteam,
+.team .teamiteam .imgteam img,
+.team .teamiteam .imgteam .socials-media,
+.team .teamiteam .imgteam .socials-media ul li,
+.team .teamiteam .imgteam .socials-media ul li:hover,
 .snip1 *,
 .snip1:after,
 #contact .socials-media ul li,
@@ -2434,13 +2411,13 @@ a:focus,
 #portfolio .portfolio-item .portfolio-thumbnail .botom-thumbnail,
 #resume .resume-info:before,
 #resume .resume-info:hover:before,
-resume resumeiteam:hover .imgteam img,
-resume resumeiteam:hover .socials-media,
-resume resumeiteam .imgteam,
-resume resumeiteam .imgteam img,
-resume resumeiteam .imgteam .socials-media,
-resume resumeiteam .imgteam .socials-media ul li,
-resume resumeiteam .imgteam .socials-media ul li:hover,
+.team .teamiteam:hover .imgteam img,
+.team .teamiteam:hover .socials-media,
+.team .teamiteam .imgteam,
+.team .teamiteam .imgteam img,
+.team .teamiteam .imgteam .socials-media,
+.team .teamiteam .imgteam .socials-media ul li,
+.team .teamiteam .imgteam .socials-media ul li:hover,
 .snip1 *,
 .snip1:after,
 #contact .socials-media ul li,
@@ -2633,13 +2610,13 @@ a:focus,
 #portfolio .portfolio-item .portfolio-thumbnail .botom-thumbnail,
 #resume .resume-info:before,
 #resume .resume-info:hover:before,
-resume resumeiteam:hover .imgteam img,
-resume resumeiteam:hover .socials-media,
-resume resumeiteam .imgteam,
-resume resumeiteam .imgteam img,
-resume resumeiteam .imgteam .socials-media,
-resume resumeiteam .imgteam .socials-media ul li,
-resume resumeiteam .imgteam .socials-media ul li:hover,
+.team .teamiteam:hover .imgteam img,
+.team .teamiteam:hover .socials-media,
+.team .teamiteam .imgteam,
+.team .teamiteam .imgteam img,
+.team .teamiteam .imgteam .socials-media,
+.team .teamiteam .imgteam .socials-media ul li,
+.team .teamiteam .imgteam .socials-media ul li:hover,
 .snip1 *,
 .snip1:after,
 #contact .socials-media ul li,
@@ -2839,13 +2816,13 @@ a:focus,
 #portfolio .portfolio-item .portfolio-thumbnail .botom-thumbnail,
 #resume .resume-info:before,
 #resume .resume-info:hover:before,
-resume resumeiteam:hover .imgteam img,
-resume resumeiteam:hover .socials-media,
-resume resumeiteam .imgteam,
-resume resumeiteam .imgteam img,
-resume resumeiteam .imgteam .socials-media,
-resume resumeiteam .imgteam .socials-media ul li,
-resume resumeiteam .imgteam .socials-media ul li:hover,
+.team .teamiteam:hover .imgteam img,
+.team .teamiteam:hover .socials-media,
+.team .teamiteam .imgteam,
+.team .teamiteam .imgteam img,
+.team .teamiteam .imgteam .socials-media,
+.team .teamiteam .imgteam .socials-media ul li,
+.team .teamiteam .imgteam .socials-media ul li:hover,
 .snip1 *,
 .snip1:after,
 #contact .socials-media ul li,
@@ -3151,13 +3128,13 @@ a:focus,
 #portfolio .portfolio-item .portfolio-thumbnail .botom-thumbnail,
 #resume .resume-info:before,
 #resume .resume-info:hover:before,
-resume resumeiteam:hover .imgteam img,
-resume resumeiteam:hover .socials-media,
-resume resumeiteam .imgteam,
-resume resumeiteam .imgteam img,
-resume resumeiteam .imgteam .socials-media,
-resume resumeiteam .imgteam .socials-media ul li,
-resume resumeiteam .imgteam .socials-media ul li:hover,
+.team .teamiteam:hover .imgteam img,
+.team .teamiteam:hover .socials-media,
+.team .teamiteam .imgteam,
+.team .teamiteam .imgteam img,
+.team .teamiteam .imgteam .socials-media,
+.team .teamiteam .imgteam .socials-media ul li,
+.team .teamiteam .imgteam .socials-media ul li:hover,
 .snip1 *,
 .snip1:after,
 #contact .socials-media ul li,
@@ -3306,13 +3283,13 @@ a:focus,
 #portfolio .portfolio-item .portfolio-thumbnail .botom-thumbnail,
 #resume .resume-info:before,
 #resume .resume-info:hover:before,
-resume resumeiteam:hover .imgteam img,
-resume resumeiteam:hover .socials-media,
-resume resumeiteam .imgteam,
-resume resumeiteam .imgteam img,
-resume resumeiteam .imgteam .socials-media,
-resume resumeiteam .imgteam .socials-media ul li,
-resume resumeiteam .imgteam .socials-media ul li:hover,
+.team .teamiteam:hover .imgteam img,
+.team .teamiteam:hover .socials-media,
+.team .teamiteam .imgteam,
+.team .teamiteam .imgteam img,
+.team .teamiteam .imgteam .socials-media,
+.team .teamiteam .imgteam .socials-media ul li,
+.team .teamiteam .imgteam .socials-media ul li:hover,
 .snip1 *,
 .snip1:after,
 #contact .socials-media ul li,
@@ -3709,53 +3686,15 @@ select:-webkit-autofill:focus {
 }
 
 #header {
-  background: url(../../images/wallpaper.jpeg) no-repeat center center fixed;
-  background-size: cover;
+  background: url(../../images/wallpaper.jpeg) repeat scroll center center/cover;
+  background-attachment: fixed;
+  margin-bottom: 0;
   width: 100%;
   height: 100vh;
-  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
-
-/* Add a semi-transparent overlay to improve text legibility */
-#header::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.4);
-  /* adjust opacity as needed */
-  z-index: 1;
-}
-
-/* Ensure the header text is above the overlay */
-#header .head-info {
-  position: relative;
-  z-index: 2;
-}
-
-/* Mobile adjustments: use cover to keep full wallpaper while text remains visible */
-@media (max-width: 991px) {
-  #header {
-    background-attachment: scroll;
-    background-size: cover;
-    background-position: center center;
-  }
-
-  body {
-    overflow-x: hidden;
-  }
-}
-  .nav-styletwo .navbar .navbar-collapse {
-    display: block;
-    width: 100%;
-  }
-
 
 #header:before {
   content: '';
@@ -3971,7 +3910,16 @@ span#typed-slide-1 {
   animation: opacityChange 2s linear 2s infinite;
 }
 
-
+#about .about-blok .aboutinfo .about-img:after {
+  content: '';
+  position: absolute;
+  bottom: 16px;
+  left: 31px;
+  width: 60%;
+  height: 5px;
+  z-index: 2;
+  background-color: #ff3d4f;
+}
 
 #about .about-blok .aboutinfo .about-img img {
   width: 100%;
@@ -4010,6 +3958,364 @@ span#typed-slide-1 {
   font-size: inherit;
 }
 
+#about #skills {
+  width: 100%;
+  height: auto;
+}
+
+#about .skills-bar-container {
+  position: relative;
+  text-align: left;
+  margin-bottom: 50px;
+  display: inline-block;
+  width: 100%;
+}
+
+#about .skills-bar-container li {
+  position: relative;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+#about .skills-bar-container li:last-child {
+  margin-bottom: 0;
+}
+
+#about .skills-bar-container li .progressbar-title h3 {
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: capitalize;
+  font-family: "Saira";
+  line-height: 1.9;
+  letter-spacing: 0.5px;
+}
+
+#about .skills-bar-container li .progressbar-title .percent {
+  margin-top: 9px;
+  margin-bottom: 0;
+  font-size: 13px;
+  font-weight: 700;
+  float: right;
+}
+
+#about .skills-bar-container li .bar-container {
+  position: relative;
+  width: 100%;
+  height: 3px;
+  margin-top: 5px;
+  display: block;
+}
+
+#about .skills-bar-container li .bar-container .progressbar {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+/* Skills Bar Animations */
+#about .skills-bar-container li .bar-container #progress-terraform {
+    -webkit-animation-name: progress-terraform;
+    animation-name: progress-terraform;
+    -webkit-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+    margin: 0;
+}
+
+#about .skills-bar-container li .bar-container #progress-python {
+    -webkit-animation-name: progress-python;
+    animation-name: progress-python;
+    -webkit-animation-delay: 1.4s;
+    animation-delay: 1.4s;
+    margin: 0;
+}
+
+#about .skills-bar-container li .bar-container #progress-go {
+    -webkit-animation-name: progress-go;
+    animation-name: progress-go;
+    -webkit-animation-delay: 2.1s;
+    animation-delay: 2.1s;
+    margin: 0;
+}
+
+#about .skills-bar-container li .bar-container #progress-docker {
+    -webkit-animation-name: progress-docker;
+    animation-name: progress-docker;
+    -webkit-animation-delay: 2.8s;
+    animation-delay: 2.8s;
+    margin: 0;
+}
+
+#about .skills-bar-container li .bar-container #progress-kubernetes {
+    -webkit-animation-name: progress-kubernetes;
+    animation-name: progress-kubernetes;
+    -webkit-animation-delay: 3.5s;
+    animation-delay: 3.5s;
+    margin: 0;
+}
+
+#about .skills-bar-container li .bar-container #progress-flutter {
+    -webkit-animation-name: progress-flutter;
+    animation-name: progress-flutter;
+    -webkit-animation-delay: 4.2s;
+    animation-delay: 4.2s;
+    margin: 0;
+}
+
+/* Keyframes for each skill */
+@-webkit-keyframes progress-terraform {
+    from { width: 0; }
+    to { width: 90%; }
+}
+@keyframes progress-terraform {
+    from { width: 0; }
+    to { width: 90%; }
+}
+
+@-webkit-keyframes progress-python {
+    from { width: 0; }
+    to { width: 85%; }
+}
+@keyframes progress-python {
+    from { width: 0; }
+    to { width: 85%; }
+}
+
+@-webkit-keyframes progress-go {
+    from { width: 0; }
+    to { width: 80%; }
+}
+@keyframes progress-go {
+    from { width: 0; }
+    to { width: 80%; }
+}
+
+@-webkit-keyframes progress-docker {
+    from { width: 0; }
+    to { width: 95%; }
+}
+@keyframes progress-docker {
+    from { width: 0; }
+    to { width: 95%; }
+}
+
+@-webkit-keyframes progress-kubernetes {
+    from { width: 0; }
+    to { width: 85%; }
+}
+@keyframes progress-kubernetes {
+    from { width: 0; }
+    to { width: 85%; }
+}
+
+@-webkit-keyframes progress-flutter {
+    from { width: 0; }
+    to { width: 75%; }
+}
+@keyframes progress-flutter {
+    from { width: 0; }
+    to { width: 75%; }
+}
+
+/* Base styles for skill bars */
+.skills-bar-container {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-bar-container li {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.skills-bar-container li .progressbar-title {
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.skills-bar-container li .bar-container {
+    width: 100%;
+    height: 10px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 5px;
+    position: relative;
+}
+
+.skills-bar-container li .bar-container .progressbar {
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background: #ff3d4f;
+    border-radius: 5px;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+/* Skills Bar Container */
+.skills-bar-container {
+  list-style-type: none;
+  padding: 0;
+}
+
+.skills-bar-container li {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+/* Title and Percentage */
+.skills-bar-container li .progressbar-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.skills-bar-container li .progressbar-title h3 {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Saira", sans-serif;
+  margin: 0;
+}
+
+.skills-bar-container li .progressbar-title .percent {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  font-family: "Saira", sans-serif;
+}
+
+/* Progress Bar */
+.skills-bar-container li .bar-container {
+  width: 100%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  position: relative;
+}
+
+.skills-bar-container li .bar-container .progressbar {
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background: #ff3d4f;
+  border-radius: 5px;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: both;
+}
+
+/* Animations for each skill */
+@keyframes progress-terraform {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 90%;
+  }
+}
+
+@keyframes progress-python {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 85%;
+  }
+}
+
+@keyframes progress-go {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 80%;
+  }
+}
+
+@keyframes progress-docker {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 95%;
+  }
+}
+
+@keyframes progress-kubernetes {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 85%;
+  }
+}
+
+@keyframes progress-flutter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 75%;
+  }
+}
+
+/* Apply animations to bars */
+#progress-terraform {
+  animation-name: progress-terraform;
+  animation-delay: 0.7s;
+}
+
+#progress-python {
+  animation-name: progress-python;
+  animation-delay: 1.4s;
+}
+
+#progress-go {
+  animation-name: progress-go;
+  animation-delay: 2.1s;
+}
+
+#progress-docker {
+  animation-name: progress-docker;
+  animation-delay: 2.8s;
+}
+
+#progress-kubernetes {
+  animation-name: progress-kubernetes;
+  animation-delay: 3.5s;
+}
+
+#progress-flutter {
+  animation-name: progress-flutter;
+  animation-delay: 4.2s;
+}
+
+#about .hvr-shutter-in-horizontal {
+  background: transparent;
+  display: inline-block;
+  font-size: 13px;
+  text-transform: capitalize;
+  font-family: "Saira";
+  letter-spacing: 0.5px;
+  font-weight: 600;
+  color: #9da1a5;
+  margin-bottom: 0;
+}
 
 #about .hvr-shutter-in-horizontal:before {
   background: transparent !important;
@@ -4043,89 +4349,6 @@ span#typed-slide-1 {
   }
 }
 
-#about .skills-bar-container li .bar-container {
-  position: relative;
-  width: 100%;
-  height: 8px;
-  /* Reduced thickness from 20px to 8px */
-  margin-top: 5px;
-  display: block;
-  background: #ddd;
-  /* Background for the empty bar */
-  overflow: hidden;
-}
-
-#about .skills-bar-container li .bar-container .progressbar {
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 0%;
-  /* Will be animated via JavaScript */
-  background: #ff3d4f;
-  /* Color for the filled bar */
-  text-align: right;
-  padding-right: 5px;
-  color: rgb(255, 255, 255)(252, 252, 252);
-  font-weight: bold;
-  line-height: 8px;
-  /* Vertical centering matches reduced container height */
-  white-space: nowrap;
-}
-
-#about .skills-bar-container li .bar-container #progress-terraform {
-  -webkit-animation-name: progress-terraform;
-  animation-name: progress-terraform;
-  -webkit-animation-delay: 0.7s;
-  animation-delay: 0.7s;
-  margin: 0;
-}
-
-#about .skills-bar-container li .bar-container #progress-python {
-  -webkit-animation-name: progress-python;
-  animation-name: progress-python;
-  -webkit-animation-delay: 1.4s;
-  animation-delay: 1.4s;
-  margin: 0;
-}
-
-#about .skills-bar-container li .bar-container #progress-go {
-  -webkit-animation-name: progress-go;
-  animation-name: progress-go;
-  -webkit-animation-delay: 2.1s;
-  animation-delay: 2.1s;
-  margin: 0;
-}
-
-#about .skills-bar-container li .bar-container #progress-docker {
-  -webkit-animation-name: progress-docker;
-  animation-name: progress-docker;
-  -webkit-animation-delay: 2.8s;
-  animation-delay: 2.8s;
-  margin: 0;
-}
-
-#about .skills-bar-container li .bar-container #progress-kubernetes {
-  -webkit-animation-name: progress-kubernetes;
-  animation-name: progress-kubernetes;
-  -webkit-animation-delay: 3.5s;
-  animation-delay: 3.5s;
-  margin: 0;
-}
-
-#about .skills-bar-container li .bar-container #progress-flutter {
-  -webkit-animation-name: progress-flutter;
-  animation-name: progress-flutter;
-  -webkit-animation-delay: 4.2s;
-  animation-delay: 4.2s;
-  margin: 0;
-}
- .btn-container {
-   display: flex;
-   justify-content: space-between;
-   margin: 20px 0;
-   /* adjust as needed */
- }
 /************************** 
 * services
 ***************************/
@@ -4457,33 +4680,33 @@ span#typed-slide-1 {
 }
 
 /************************** 
-* Resume
+* Team
 ***************************/
-resume {
+.team {
   position: relative;
 }
 
-resume resumeiteam {
+.team .teamiteam {
   cursor: pointer;
   box-shadow: 0px 9px 31px 6px rgba(0, 0, 0, 0.2) !important;
 }
 
-resume resumeiteam:hover .imgteam img {
+.team .teamiteam:hover .imgteam img {
   -webkit-filter: blur(3px);
   filter: blur(3px);
 }
 
-resume resumeiteam:hover .socials-media {
+.team .teamiteam:hover .socials-media {
   margin-bottom: 24px !important;
 }
 
-resume resumeiteam .imgteam {
+.team .teamiteam .imgteam {
   height: 435px;
   position: relative;
   overflow: hidden;
 }
 
-resume resumeiteam .imgteam:after {
+.team .teamiteam .imgteam:after {
   content: '';
   opacity: 0.4;
   transition: opacity 300ms;
@@ -4494,13 +4717,13 @@ resume resumeiteam .imgteam:after {
   right: 0;
 }
 
-resume resumeiteam .imgteam img {
+.team .teamiteam .imgteam img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-resume resumeiteam .imgteam .socials-media {
+.team .teamiteam .imgteam .socials-media {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -4508,12 +4731,12 @@ resume resumeiteam .imgteam .socials-media {
   z-index: 9;
 }
 
-resume resumeiteam .imgteam .socials-media ul {
+.team .teamiteam .imgteam .socials-media ul {
   display: flex;
   justify-content: center;
 }
 
-resume resumeiteam .imgteam .socials-media ul li {
+.team .teamiteam .imgteam .socials-media ul li {
   float: left;
   height: 40px;
   width: 40px;
@@ -4523,15 +4746,15 @@ resume resumeiteam .imgteam .socials-media ul li {
   border-radius: 4px;
 }
 
-resume resumeiteam .btmteam {
+.team .teamiteam .btmteam {
   padding: 20px;
 }
 
-resume resumeiteam .btmteam .maintitle {
+.team .teamiteam .btmteam .maintitle {
   margin-bottom: 0;
 }
 
-resume resumeiteam .btmteam .separator {
+.team .teamiteam .btmteam .separator {
   text-transform: capitalize;
   font-weight: 500;
   font-size: 15px;
