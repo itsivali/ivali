@@ -4211,8 +4211,8 @@ span#typed-slide-1 {
   animation-duration: 2s;
   animation-timing-function: ease-out;
   animation-fill-mode: both;
+  animation-play-state: paused;
 }
-
 /* Animations for each skill */
 @keyframes progress-terraform {
   from {
