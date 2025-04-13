@@ -12,6 +12,9 @@
     <meta name="keywords"
         content="Portfolio, Software Engineer, DevOps, Backend, Terraform, Docker, Kubernetes, Flutter, Python, Go">
     <meta name="author" content="Willis Ivali">
+   
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
     <!-- Open Graph -->
     <meta property="og:title" content="Willis Ivali">
     <meta property="og:description"
@@ -36,18 +39,19 @@
     <link href="assets/css/main/homepages-rtl.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/resume.css">
 
+
     <!-- Calendly widget assets loaded asynchronously -->
     <link rel="preconnect" href="https://assets.calendly.com">
     <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
     <script async src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
-   
+
 </head>
 
 <body>
-   
-<!-- cursor start -->
-<div class="cursor"></div>
-<!-- End  start -->
+
+    <!-- cursor start -->
+    <div class="cursor"></div>
+    <!-- End  start -->
     <!-- start section navbar -->
     <div class="navbar-wrapper none-sq-price">
         <div class="navfixed">
@@ -89,17 +93,9 @@
                                         <li class="nav-item">
                                             <p>03</p>
                                             <a class="nav-link" href="#portfolio">Portfolio</a>
-                                        </li>
+                                       
                                         <li class="nav-item">
                                             <p>04</p>
-                                            <a class="nav-link" href="resume.html">Resume</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <p>05</p>
-                                            <a class="nav-link" href="#journal">news</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <p>06</p>
                                             <a class="nav-link" href="#contact">Contact</a>
                                         </li>
                                     </ul>
@@ -113,24 +109,16 @@
                                         <div class="col-md-12">
                                             <div class="testtest">
                                                 <div class="contact-block">
-                                                    <h4 class="maintitle">EMAIL</h4>
-                                                    <span>mail@domaine.com</span>
+                                                    <h4 class="maintitle">Email</h4>
+                                                    <span>itsivali@gmail.com</span>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="col-md-12">
                                             <div class="testtest">
                                                 <div class="contact-block">
-                                                    <h4 class="maintitle">CALL US</h4>
-                                                    <span>700 000 40 19</span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-12">
-                                            <div class="testtest">
-                                                <div class="contact-block">
-                                                    <h4 class="maintitle">ADDRESS</h4>
-                                                    <span>308, Royal Square, Nr.</span>
+                                                    <h4 class="maintitle">Say Hello!</h4>
+                                                    <span>0705-369-005</span>
                                                 </div>
                                             </div>
                                         </div>
@@ -143,7 +131,7 @@
             </div>
         </div>
     </div>
-   
+
     <!-- End section navbar -->
 
 
@@ -178,13 +166,9 @@
                                 data-scroll-nav="3">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#team" data-text="team" data-scroll-nav="4">team</a>
-                        </li>
+                            <a class="nav-link" href="#faq" data-text="FAQ" data-scroll-nav="4">FAQ</a>
                         <li class="nav-item">
-                            <a class="nav-link" href="#journal" data-text="news" data-scroll-nav="5">news</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact" data-text="Contact" data-scroll-nav="6">Contact</a>
+                            <a class="nav-link" href="#contact" data-text="Contact" data-scroll-nav="5">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -280,11 +264,11 @@
 
                                 <div class="about-descr text" style="direction: ltr; text-align: justify;">
                                     <h3 class="title">Abit about me</h3>
-                                    <p class="separator">
-                                        😊 I’m a software engineer who talks to computers more than people (they listen
-                                        better anyway) 😉.
-                                    </p>
-
+                                    <div class="intro-level">
+                                        <img src="assets/images/portrait.png" alt="Portrait" class="portrait">
+                                        <span>😊 I’m a software engineer who talks to computers more than people (they
+                                            listen better anyway) 😉.</span>
+                                    </div>
                                     <p class="separator">
                                         🚀 For the past six years, I’ve been turning cups of tea into high-performance
                                         applications, scalable backend systems, and automation magic.
@@ -334,67 +318,67 @@
                                         <div class="about-blok">
                                             <div class="row">
                                                 <div class="col-md-12">
-                                                <div class="skills-bar-container">
-                                                    <li>
-                                                        <div class="progressbar-title">
-                                                            <h3>Terraform</h3>
-                                                            <span class="percent">90%</span>
-                                                        </div>
-                                                        <div class="bar-container">
-                                                            <div class="progressbar" id="progress-terraform"></div>
-                                                        </div>
-                                                    </li>
-                                                
-                                                    <li>
-                                                        <div class="progressbar-title">
-                                                            <h3>Python</h3>
-                                                            <span class="percent">85%</span>
-                                                        </div>
-                                                        <div class="bar-container">
-                                                            <div class="progressbar" id="progress-python"></div>
-                                                        </div>
-                                                    </li>
-                                                
-                                                    <li>
-                                                        <div class="progressbar-title">
-                                                            <h3>Go</h3>
-                                                            <span class="percent">80%</span>
-                                                        </div>
-                                                        <div class="bar-container">
-                                                            <div class="progressbar" id="progress-go"></div>
-                                                        </div>
-                                                    </li>
-                                                
-                                                    <li>
-                                                        <div class="progressbar-title">
-                                                            <h3>Docker</h3>
-                                                            <span class="percent">95%</span>
-                                                        </div>
-                                                        <div class="bar-container">
-                                                            <div class="progressbar" id="progress-docker"></div>
-                                                        </div>
-                                                    </li>
-                                                
-                                                    <li>
-                                                        <div class="progressbar-title">
-                                                            <h3>Kubernetes</h3>
-                                                            <span class="percent">85%</span>
-                                                        </div>
-                                                        <div class="bar-container">
-                                                            <div class="progressbar" id="progress-kubernetes"></div>
-                                                        </div>
-                                                    </li>
-                                                
-                                                    <li>
-                                                        <div class="progressbar-title">
-                                                            <h3>Flutter</h3>
-                                                            <span class="percent">75%</span>
-                                                        </div>
-                                                        <div class="bar-container">
-                                                            <div class="progressbar" id="progress-flutter"></div>
-                                                        </div>
-                                                    </li>
-                                                </div>
+                                                    <div class="skills-bar-container">
+                                                        <li>
+                                                            <div class="progressbar-title">
+                                                                <h3>Terraform</h3>
+                                                                <span class="percent">90%</span>
+                                                            </div>
+                                                            <div class="bar-container">
+                                                                <div class="progressbar" id="progress-terraform"></div>
+                                                            </div>
+                                                        </li>
+
+                                                        <li>
+                                                            <div class="progressbar-title">
+                                                                <h3>Python</h3>
+                                                                <span class="percent">85%</span>
+                                                            </div>
+                                                            <div class="bar-container">
+                                                                <div class="progressbar" id="progress-python"></div>
+                                                            </div>
+                                                        </li>
+
+                                                        <li>
+                                                            <div class="progressbar-title">
+                                                                <h3>Go</h3>
+                                                                <span class="percent">80%</span>
+                                                            </div>
+                                                            <div class="bar-container">
+                                                                <div class="progressbar" id="progress-go"></div>
+                                                            </div>
+                                                        </li>
+
+                                                        <li>
+                                                            <div class="progressbar-title">
+                                                                <h3>Docker</h3>
+                                                                <span class="percent">95%</span>
+                                                            </div>
+                                                            <div class="bar-container">
+                                                                <div class="progressbar" id="progress-docker"></div>
+                                                            </div>
+                                                        </li>
+
+                                                        <li>
+                                                            <div class="progressbar-title">
+                                                                <h3>Kubernetes</h3>
+                                                                <span class="percent">85%</span>
+                                                            </div>
+                                                            <div class="bar-container">
+                                                                <div class="progressbar" id="progress-kubernetes"></div>
+                                                            </div>
+                                                        </li>
+
+                                                        <li>
+                                                            <div class="progressbar-title">
+                                                                <h3>Flutter</h3>
+                                                                <span class="percent">75%</span>
+                                                            </div>
+                                                            <div class="bar-container">
+                                                                <div class="progressbar" id="progress-flutter"></div>
+                                                            </div>
+                                                        </li>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -432,13 +416,17 @@
                             <div class="card-date">January 2022 – Present</div>
                             <div class="card-title">Freelance Software Engineer | Self-Employed</div>
                             <div class="card-content">
-                                <p><strong>High-Quality Code & Feature Development:</strong> Designed and built mobile and
-                                    web applications using Python (backend), React for dynamic interfaces, and Flutter for
+                                <p><strong>High-Quality Code & Feature Development:</strong> Designed and built mobile
+                                    and
+                                    web applications using Python (backend), React for dynamic interfaces, and Flutter
+                                    for
                                     cross‑platform mobile development. User engagement increased by 20% and load times
                                     reduced by 35%.</p>
-                                <p><strong>Deployment & CI/CD:</strong> Integrated CI/CD pipelines for seamless deployment
+                                <p><strong>Deployment & CI/CD:</strong> Integrated CI/CD pipelines for seamless
+                                    deployment
                                     on Netlify and GitHub Pages—reducing post‑deployment issues by 40%.</p>
-                                <p><strong>Cloud Infrastructure:</strong> Utilized Terraform to manage cloud environments,
+                                <p><strong>Cloud Infrastructure:</strong> Utilized Terraform to manage cloud
+                                    environments,
                                     cutting deployment time by 50%.</p>
                                 <p><strong>Testing & Documentation:</strong> Developed thorough testing suites and
                                     documentation, reducing onboarding time by 25% and ensuring 99% uptime.</p>
@@ -451,11 +439,13 @@
                             <div class="card-date">January 2019 – November 2021</div>
                             <div class="card-title">United Nations Environment Program | Software Engineer</div>
                             <div class="card-content">
-                                <p><strong>Client-Facing Interface Design:</strong> Designed an intuitive search interface,
+                                <p><strong>Client-Facing Interface Design:</strong> Designed an intuitive search
+                                    interface,
                                     boosting public accessibility by 60%.</p>
                                 <p><strong>UN Ozone Secretariat Website & Mobile App:</strong> Contributed to robust
                                     security measures and real‑time data features, improving data access by 40%.</p>
-                                <p><strong>Cross‑Functional Collaboration:</strong> Collaborated across multiple teams to
+                                <p><strong>Cross‑Functional Collaboration:</strong> Collaborated across multiple teams
+                                    to
                                     optimize data management and system interoperability.</p>
                             </div>
                         </div>
@@ -465,7 +455,8 @@
                             <div class="card-title">Microsoft | Software Engineer – Windows Development Team</div>
                             <div class="card-content">
                                 <p><strong>Windows PhoneLink Development:</strong> Developed and optimized the PhoneLink
-                                    application using C# and XAML, reducing latency by 20% while enhancing responsiveness.
+                                    application using C# and XAML, reducing latency by 20% while enhancing
+                                    responsiveness.
                                 </p>
                                 <p><strong>Feature Implementation & Collaboration:</strong> Contributed to new Windows
                                     features and collaborated with cross‑functional teams to refine design and
@@ -483,9 +474,11 @@
                                     increasing system throughput by 15% and scalability.</p>
                                 <p><strong>Scalability Testing & DevOps:</strong> Executed scalability tests using Azure
                                     Load Testing and k6, reducing response times by 20%.</p>
-                                <p><strong>Automation & Debugging:</strong> Automated deployment pipelines with Python and
+                                <p><strong>Automation & Debugging:</strong> Automated deployment pipelines with Python
+                                    and
                                     integrated Azure Monitor tools—improving consistency and reducing downtime.</p>
-                                <p><strong>Agile Collaboration:</strong> Participated in sprints and code reviews to uphold
+                                <p><strong>Agile Collaboration:</strong> Participated in sprints and code reviews to
+                                    uphold
                                     high coding standards and reduce technical debt.</p>
                             </div>
                         </div>
@@ -494,250 +487,272 @@
             </div><!-- #resume -->
         </div><!-- .scroll-container -->
 
-<div id="faq" class="pt-90 text-center" data-scroll-index="2">
-    <div class="container">
-        <div class="section-title">
-            <h2>Get to Know Me – The Fun FAQ Edition 🎉</h2>
-        </div>
-        <div class="card-grid">
-            <!-- FAQ Card 1 -->
-            <div class="card">
-                <div class="card-title">
-                    <i class="fa fa-code fa-2x" style="color: #ff3d4f;"></i>
-                    <h4>What do you do for a living?</h4>
+        <div id="faq" class="pt-90 text-center" data-scroll-index="2">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Get to Know Me – The Fun FAQ Edition 🎉</h2>
                 </div>
-                <div class="card-content">
-                    <p>I summon web applications into existence and keep their digital homes running smoothly.
-                        Basically, I'm a software engineer who builds cool stuff for the internet.</p>
-                </div>
-            </div>
-
-            <!-- FAQ Card 2 -->
-            <div class="card">
-                <div class="card-title">
-                    <i class="fa fa-coffee fa-2x" style="color: #ff3d4f;"></i>
-                    <h4>Any addictions I should know about?</h4>
-                </div>
-                <div class="card-content">
-                    <p>Just one—tea. If there's a Tea Anonymous group, I should probably join... but only if they serve
-                        tea at the meetings. ☕</p>
-                </div>
-            </div>
-
-            <!-- FAQ Card 3 -->
-            <div class="card">
-                <div class="card-title">
-                    <i class="fa fa-gamepad fa-2x" style="color: #ff3d4f;"></i>
-                    <h4>How do you unwind?</h4>
-                </div>
-                <div class="card-content">
-                    <p>I embark on epic gaming adventures, binge-watch TV shows like it's a full-time job, and get lost
-                        in the kitchen experimenting with flavors.</p>
-                </div>
-            </div>
-
-            <!-- FAQ Card 4 -->
-            <div class="card">
-                <div class="card-title">
-                    <i class="fa fa-cutlery fa-2x" style="color: #ff3d4f;"></i>
-                    <h4>Cooking, huh? What's your specialty?</h4>
-                </div>
-                <div class="card-content">
-                    <p>Anything that explodes with flavor! If taste buds could throw a party, mine would be VIP-only.
-                        🎉👨‍🍳</p>
-                </div>
-            </div>
-
-            <!-- FAQ Card 5 -->
-            <div class="card">
-                <div class="card-title">
-                    <i class="fa fa-lightbulb-o fa-2x" style="color: #ff3d4f;"></i>
-                    <h4>If you weren't a software engineer, what would you be?</h4>
-                </div>
-                <div class="card-content">
-                    <p>Probably a professional tea taster, a game reviewer, or a chef who never follows recipes. Got
-                        more questions? Bring 'em on! 😎</p>
-                </div>
-            </div>
-
-            <!-- Gaming Corner -->
-            <div class="card">
-                <div class="card-title">
-                    <i class="fa fa-gamepad fa-2x" style="color: #ff3d4f;"></i>
-                    <h4>What games are you obsessed with?</h4>
-                </div>
-                <div class="card-content">
-                    <p>I'm all about stealth, tactics, and action-packed chaos! You'll find me lurking in the shadows in
-                        <em>Hitman</em>, strategizing in <em>Rainbow Six Siege</em>, taking back D.C. in <em>The
-                            Division 2</em>,
-                        or just blowing things up in <em>Call of Duty</em>. When I'm not on a mission, I'm tearing up
-                        the
-                        tracks in <em>WRC</em> and <em>Forza Motorsport</em>.
-                    </p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-title">
-                    <i class="fa fa-user-secret fa-2x" style="color: #ff3d4f;"></i>
-                    <h4>Stealth or all guns blazing?</h4>
-                </div>
-                <div class="card-content">
-                    <p>Stealth, every time. If I can clear an entire level without being seen, I feel like a mastermind.
-                        But if things go south... well, let's just say I have no problem turning a stealth mission into
-                        a full-on war zone.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-title">
-                    <i class="fa fa-car fa-2x" style="color: #ff3d4f;"></i>
-                    <h4>Favorite car to race in <em>Forza</em>?</h4>
-                </div>
-                <div class="card-content">
-                    <p>Always the SRT Hellcat. Pure muscle, pure power, and just the right amount of insanity. 🚗💨</p>
-                </div>
-            </div>
-
-            <!-- Wine & Dine -->
-            <div class="card">
-                <div class="card-title">
-                    <i class="fa fa-glass-cheers fa-2x" style="color: #ff3d4f;"></i>
-                    <h4>What's your go-to drink (besides tea)?</h4>
-                </div>
-                <div class="card-content">
-                    <p>Dessert wines! Sauternes is my ultimate pick—sweet, smooth, and dangerously easy to drink.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-title">
-                    <i class="fa fa-wine-glass fa-2x" style="color: #ff3d4f;"></i>
-                    <h4>Red or white wine?</h4>
-                </div>
-                <div class="card-content">
-                    <p>If it's a rich, golden, honey-like dessert wine, I'm all in. Otherwise, white.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-title">
-                    <i class="fa fa-cutlery fa-2x" style="color: #ff3d4f;"></i>
-                    <h4>What's your ultimate comfort meal?</h4>
-                </div>
-                <div class="card-content">
-                    <p>Cumin or coconut rice with butter chicken. The blend of spices, creamy sauce, and that perfect,
-                        fluffy rice? Absolute perfection.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-title">
-                    <i class="fa fa-heart fa-2x" style="color: #ff3d4f;"></i>
-                    <h4>Pairing wine with food—any favorites?</h4>
-                </div>
-                <div class="card-content">
-                    <p>A chilled glass of Sauternes with a rich, spicy dish? That's the dream. Sweet meets heat, and it
-                        just works.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Add this after the About section and before the Resume section -->
-
-<!-- start section portfolio -->
-<div id="portfolio" class="pt-90" data-scroll-index="3">
-    <div class="container">
-        <div class="section-title">
-            <h2>My Projects</h2>
-        </div>
-
-        <div class="portfolio-grid">
-            <!-- Project 1 -->
-            <div class="portfolio-item">
-                <div class="card large-card">
-                    <div class="portfolio-thumbnail">
-                        <img src="assets/images/ozone.png" class="img-responsive" alt="UN Ozone Secretariat">
-                        <div class="overlay">
-                            <div class="content-port">
-                                <a href="#project1" data-toggle="modal">
-                                    <i class="fa fa-search-plus fa-3x"></i>
-                                </a>
-                            </div>
+                <div class="card-grid">
+                    <!-- FAQ Card 1 -->
+                    <div class="card">
+                        <div class="card-title">
+                            <i class="fa fa-code fa-2x" style="color: #ff3d4f;"></i>
+                            <h4>What do you do for a living?</h4>
+                        </div>
+                        <div class="card-content">
+                            <p>I summon web applications into existence and keep their digital homes running smoothly.
+                                Basically, I'm a software engineer who builds cool stuff for the internet.</p>
                         </div>
                     </div>
-                    <div class="card-body">
-                        <h4>UN Ozone Secretariat Platform</h4>
-                        <p>Environmental Data Management System</p>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Project 2 -->
-            <div class="portfolio-item">
-                <div class="card large-card">
-                    <div class="portfolio-thumbnail">
-                        <img src="assets/images/booking-app.png" class="img-responsive" alt="Open Table Platform">
-                        <div class="overlay">
-                            <div class="content-port">
-                                <a href="#project2" data-toggle="modal">
-                                    <i class="fa fa-search-plus fa-3x"></i>
-                                </a>
-                            </div>
+                    <!-- FAQ Card 2 -->
+                    <div class="card">
+                        <div class="card-title">
+                            <i class="fa fa-coffee fa-2x" style="color: #ff3d4f;"></i>
+                            <h4>Any addictions I should know about?</h4>
+                        </div>
+                        <div class="card-content">
+                            <p>Just one—tea. If there's a Tea Anonymous group, I should probably join... but only if
+                                they serve
+                                tea at the meetings. ☕</p>
                         </div>
                     </div>
-                    <div class="card-body">
-                        <h4>Open Table</h4>
-                        <p>Booking Application</p>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Project 3 -->
-            <div class="portfolio-item">
-                <div class="card large-card">
-                    <div class="portfolio-thumbnail">
-                        <img src="assets/images/e-commerce.png" class="img-responsive" alt="E-Commerce Application">
-                        <div class="overlay">
-                            <div class="content-port">
-                                <a href="#project3" data-toggle="modal">
-                                    <i class="fa fa-search-plus fa-3x"></i>
-                                </a>
-                            </div>
+                    <!-- FAQ Card 3 -->
+                    <div class="card">
+                        <div class="card-title">
+                            <i class="fa fa-gamepad fa-2x" style="color: #ff3d4f;"></i>
+                            <h4>How do you unwind?</h4>
+                        </div>
+                        <div class="card-content">
+                            <p>I embark on epic gaming adventures, binge-watch TV shows like it's a full-time job, and
+                                get lost
+                                in the kitchen experimenting with flavors.</p>
                         </div>
                     </div>
-                    <div class="card-body">
-                        <h4>E-Commerce Application</h4>
-                        <p>Multi-Cloud Management Platform</p>
-                    </div>
-                </div>
-            </div>
 
-            <!-- Project 4 -->
-            <div class="portfolio-item">
-                <div class="card large-card">
-                    <div class="portfolio-thumbnail">
-                        <img src="assets/images/grocery-app.png" class="img-responsive" alt="Food Delivery App">
-                        <div class="overlay">
-                            <div class="content-port">
-                                <a href="#project4" data-toggle="modal">
-                                    <i class="fa fa-search-plus fa-3x"></i>
-                                </a>
-                            </div>
+                    <!-- FAQ Card 4 -->
+                    <div class="card">
+                        <div class="card-title">
+                            <i class="fa fa-cutlery fa-2x" style="color: #ff3d4f;"></i>
+                            <h4>Cooking, huh? What's your specialty?</h4>
+                        </div>
+                        <div class="card-content">
+                            <p>Anything that explodes with flavor! If taste buds could throw a party, mine would be
+                                VIP-only.
+                                🎉👨‍🍳</p>
                         </div>
                     </div>
-                    <div class="card-body">
-                        <h4>Food Delivery App</h4>
-                        <p>Cross-Platform Mobile Applications</p>
+
+                    <!-- FAQ Card 5 -->
+                    <div class="card">
+                        <div class="card-title">
+                            <i class="fa fa-lightbulb-o fa-2x" style="color: #ff3d4f;"></i>
+                            <h4>If you weren't a software engineer, what would you be?</h4>
+                        </div>
+                        <div class="card-content">
+                            <p>Probably a professional tea taster, a game reviewer, or a chef who never follows recipes.
+                                Got
+                                more questions? Bring 'em on! 😎</p>
+                        </div>
+                    </div>
+
+                    <!-- Gaming Corner -->
+                    <div class="card">
+                        <div class="card-title">
+                            <i class="fa fa-gamepad fa-2x" style="color: #ff3d4f;"></i>
+                            <h4>What games are you obsessed with?</h4>
+                        </div>
+                        <div class="card-content">
+                            <p>I'm all about stealth, tactics, and action-packed chaos! You'll find me lurking in the
+                                shadows in
+                                <em>Hitman</em>, strategizing in <em>Rainbow Six Siege</em>, taking back D.C. in <em>The
+                                    Division 2</em>,
+                                or just blowing things up in <em>Call of Duty</em>. When I'm not on a mission, I'm
+                                tearing up
+                                the
+                                tracks in <em>WRC</em> and <em>Forza Motorsport</em>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-title">
+                            <i class="fa fa-user-secret fa-2x" style="color: #ff3d4f;"></i>
+                            <h4>Stealth or all guns blazing?</h4>
+                        </div>
+                        <div class="card-content">
+                            <p>Stealth, every time. If I can clear an entire level without being seen, I feel like a
+                                mastermind.
+                                But if things go south... well, let's just say I have no problem turning a stealth
+                                mission into
+                                a full-on war zone.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-title">
+                            <i class="fa fa-car fa-2x" style="color: #ff3d4f;"></i>
+                            <h4>Favorite car to race in <em>Forza</em>?</h4>
+                        </div>
+                        <div class="card-content">
+                            <p>Always the SRT Hellcat. Pure muscle, pure power, and just the right amount of insanity.
+                                🚗💨</p>
+                        </div>
+                    </div>
+
+                    <!-- Wine & Dine -->
+                    <div class="card">
+                        <div class="card-title">
+                            <i class="fa fa-glass-cheers fa-2x" style="color: #ff3d4f;"></i>
+                            <h4>What's your go-to drink (besides tea)?</h4>
+                        </div>
+                        <div class="card-content">
+                            <p>Dessert wines! Sauternes is my ultimate pick—sweet, smooth, and dangerously easy to
+                                drink.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-title">
+                            <i class="fa fa-wine-glass fa-2x" style="color: #ff3d4f;"></i>
+                            <h4>Red or white wine?</h4>
+                        </div>
+                        <div class="card-content">
+                            <p>If it's a rich, golden, honey-like dessert wine, I'm all in. Otherwise, white.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-title">
+                            <i class="fa fa-cutlery fa-2x" style="color: #ff3d4f;"></i>
+                            <h4>What's your ultimate comfort meal?</h4>
+                        </div>
+                        <div class="card-content">
+                            <p>Cumin or coconut rice with butter chicken. The blend of spices, creamy sauce, and that
+                                perfect,
+                                fluffy rice? Absolute perfection.</p>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-title">
+                            <i class="fa fa-heart fa-2x" style="color: #ff3d4f;"></i>
+                            <h4>Pairing wine with food—any favorites?</h4>
+                        </div>
+                        <div class="card-content">
+                            <p>A chilled glass of Sauternes with a rich, spicy dish? That's the dream. Sweet meets heat,
+                                and it
+                                just works.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-<!-- end section portfolio -->
+        <!-- start section portfolio -->
+        <div id="portfolio" class="pt-90" data-scroll-index="3">
+            <div class="container">
+                <div class="section-title">
+                    <h2>My Projects</h2>
+                </div>
+                <div class="row">
+                    <!-- Project Card 1 -->
+                    <div class="col-md-6 col-sm-12">
+                        <div class="card project-card">
+                            <div class="img-container">
+                                <img src="assets/images/ozone.png" class="img-responsive" alt="UN Ozone Secretariat">
+                            </div>
+                            <div class="card-body">
+                                <h4>UN Ozone Secretariat Platform</h4>
+                                <p>
+                                    An environmental data management system for real‑time visualization, global
+                                    accessibility,
+                                    and advanced analytics.
+                                </p>
+                                <div class="tech-stack">
+                                    <span class="badge">Terraform</span>
+                                    <span class="badge">Docker</span>
+                                    <span class="badge">Azure Kubernetes Service</span>
+                                    <span class="badge">MySQL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Card 2 -->
+                    <div class="col-md-6 col-sm-12">
+                        <div class="card project-card">
+                            <div class="img-container">
+                                <img src="assets/images/booking-app.png" class="img-responsive"
+                                    alt="Open Table Booking Platform">
+                            </div>
+                            <div class="card-body">
+                                <h4>Open Table Booking Platform</h4>
+                                <p>
+                                    A sophisticated restaurant booking system with real‑time table availability and
+                                    integrated payment processing.
+                                </p>
+                                <div class="tech-stack">
+                                    <span class="badge">React</span>
+                                    <span class="badge">Node.js</span>
+                                    <span class="badge">MongoDB</span>
+                                    <span class="badge">Stripe API</span>
+                                    <span class="badge">Socket.io</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Card 3 -->
+                    <div class="col-md-6 col-sm-12">
+                        <div class="card project-card">
+                            <div class="img-container">
+                                <img src="assets/images/e-commerce.png" class="img-responsive"
+                                    alt="E-Commerce Application">
+                            </div>
+                            <div class="card-body">
+                                <h4>E-Commerce Application</h4>
+                                <p>
+                                    A scalable multi‑cloud platform optimized for high‑traffic e-commerce with advanced
+                                    inventory
+                                    tracking and automated order fulfillment.
+                                </p>
+                                <div class="tech-stack">
+                                    <span class="badge">Go</span>
+                                    <span class="badge">Kubernetes</span>
+                                    <span class="badge">Terraform</span>
+                                    <span class="badge">GCP</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Project Card 4 -->
+                    <div class="col-md-6 col-sm-12">
+                        <div class="card project-card">
+                            <div class="img-container">
+                                <img src="assets/images/grocery-app.png" class="img-responsive" alt="Food Delivery App">
+                            </div>
+                            <div class="card-body">
+                                <h4>Food Delivery App</h4>
+                                <p>
+                                    A cross‑platform mobile application offering real‑time order tracking, automated
+                                    dispatch,
+                                    and a seamless
+                                    user experience.
+                                </p>
+                                <div class="tech-stack">
+                                    <span class="badge">Flutter</span>
+                                    <span class="badge">Firebase</span>
+                                    <span class="badge">Google Maps API</span>
+                                    <span class="badge">Node.js</span>
+                                    <span class="badge">MongoDB</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div>
+        <!-- end section portfolio -->
+
 
         <!-- start section contact -->
         <div id="contact" class="pt-90 pb-90" data-scroll-index="6">
@@ -753,19 +768,15 @@
                         <div class="infcontactfull">
                             <div class="contact-block text-center ">
                                 <h4 class="maintitle">EMAIL</h4>
-                                <span>mail@domaine.com</span>
-                                <span>INFO@EXAMPLE.COM</span>
+                                <span>itsivali@gmail.com</span>
+                                
                             </div>
                             <div class="contact-block text-center br-lr">
-                                <h4 class="maintitle">CALL US</h4>
-                                <span>700 000 40 19</span>
-                                <span>700 4567 38 18</span>
+                                <h4 class="maintitle">SAY HELLO</h4>
+                                <span>0705-369-005</span>
+                               
                             </div>
-                            <div class="contact-block text-center ">
-                                <h4 class="maintitle">ADDRESS</h4>
-                                <span>308, Royal Square, Nr.</span>
-                                <span>ARLINGTON VA 32101, USA</span>
-                            </div>
+
                         </div>
                     </div>
                     <div class="col-md-12 col-lg-8">
@@ -816,11 +827,10 @@
             </div>
             <div class="socials-media text-center">
                 <ul class="list-unstyled ">
-                    <li><a href="# "><i class="fa fa-facebook "></i></a></li>
-                    <li><a href="# "><i class="fa fa-twitter "></i></a></li>
-                    <li><a href="# "><i class="fa fa-linkedin "></i></a></li>
-                    <li><a href="# "><i class="fa fa-instagram "></i></a></li>
-                    <li><a href="# "><i class="fa fa-behance "></i></a></li>
+                    <li><a href="www.facebook.com/itsivali "><i class="fa fa-facebook "></i></a></li>
+                    <li><a href=www.twitter.com/willis-ivali "><i class="fa fa-twitter "></i></a></li>
+                    <li><a href="www.likedin.com/in/willis-ivali "><i class="fa fa-linkedin "></i></a></li>
+                    <li><a href="www.instagram.com/willis-ivali "><i class="fa fa-instagram "></i></a></li>
                 </ul>
             </div>
         </div>
@@ -834,7 +844,7 @@
                 <div class="row">
                     <div class="col-md-12 col-lg-6">
                         <div class="copyright">
-                            <span>&copy; Copyrights uxign 2020. All rights reserved.</span>
+                            <span>&copy; Copyrights Willis Ivali 2025. All rights reserved.</span>
                         </div>
                     </div>
                     <div class="col-md-12 col-lg-6 initialdisp">
@@ -916,7 +926,7 @@
 
     <!-- Jquery -->
     <script src="assets/js/jquery.js"></script>
-     <!-- Theme -->
+    <!-- Theme -->
     <script src="assets/js/theme.js"></script>
     <!-- popper -->
     <script src="assets/js/popper.min.js"></script>
@@ -975,7 +985,7 @@
 
         document.oncontextmenu = new Function("alert(message);return false")
     </script>
-    
+
     <script>
         document.onkeydown = function (e) {
             if (event.keyCode == 123) {
@@ -995,7 +1005,7 @@
             }
         }
     </script>
-        
+
 
 </body>
 

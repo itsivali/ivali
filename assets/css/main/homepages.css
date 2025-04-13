@@ -235,101 +235,135 @@ body {
 /************************** 
 * Transition
 ***************************/
-
-/* Portfolio Section Styles */
-.portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
-  margin: 40px auto;
-  max-width: 1400px;
-  padding: 0 20px;
+.intro-level {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 20px 0;
 }
 
-.portfolio-item {
-  width: 100%;
+.intro-level .portrait {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 50%;
 }
-
-.large-card {
+/* Portfolio Cards Styles */
+.project-card {
   background: rgba(51, 51, 51, 0.9);
   border-radius: 15px;
   overflow: hidden;
-  transition: transform 0.3s ease;
-  height: 100%;
+  margin-bottom: 30px;
 }
 
-.large-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.portfolio-thumbnail {
-  position: relative;
+.project-card .img-container {
+  width: 100%;
+  height: 250px;
   overflow: hidden;
-  height: 400px;
 }
 
-.portfolio-thumbnail img {
+.project-card .img-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
 
-.portfolio-thumbnail .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.7);
-  opacity: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: opacity 0.3s ease;
+.project-card .img-container img:hover {
+  transform: scale(1.05);
 }
 
-.portfolio-item:hover .overlay {
-  opacity: 1;
+.project-card .card-body {
+  padding: 20px;
+  color: #e0e0e0;
 }
 
-.content-port i {
-  color: #fff;
-  transition: transform 0.3s ease;
+.project-card .card-body h4 {
+  font-size: 20px;
+  color: #ff3d4f;
+  margin-bottom: 15px;
+  text-transform: uppercase;
 }
 
-.content-port i:hover {
-  transform: scale(1.2);
-}
-
-.card-body {
-  padding: 25px 30px;
-}
-
-.card-body h4 {
-  color: #fff;
-  margin: 0 0 15px;
-  font-size: 24px;
-}
-
-.card-body p {
-  color: #999;
-  margin: 0;
-  font-size: 16px;
+.project-card .card-body p {
+  margin-bottom: 15px;
+  font-size: 14px;
   line-height: 1.6;
 }
 
-@media (max-width: 768px) {
-  .portfolio-grid {
-    grid-template-columns: 1fr;
-    gap: 30px;
-  }
-
-  .portfolio-thumbnail {
-    height: 300px;
-  }
+.tech-stack {
+  margin-top: 15px;
 }
+
+.tech-stack .badge {
+  background: #ff3d4f;
+  color: #fff;
+  padding: 5px 10px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  border-radius: 20px;
+  font-size: 12px;
+  display: inline-block;
+}
+
+/* Modal Styles for Full Image Display */
+.modal-dialog.modal-xl {
+  max-width: 90vw;
+  margin: 30px auto;
+}
+
+.modal-content {
+  background: rgba(42, 42, 42, 0.95);
+  color: #fff;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+.modal-header {
+  border-bottom: 1px solid #444;
+  padding: 20px 30px;
+}
+
+.modal-body {
+  padding: 0;
+}
+
+.img-container.modal-img {
+  width: 100%;
+  max-height: 80vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+}
+
+.img-container.modal-img img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.project-details {
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.tech-stack {
+  margin-top: 15px;
+}
+
+.tech-stack .badge {
+  background: #ff3d4f;
+  color: #fff;
+  padding: 5px 10px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  border-radius: 20px;
+  font-size: 12px;
+  display: inline-block;
+}
+
 
 .transition,
 .btn,
@@ -3986,9 +4020,10 @@ span#typed-slide-1 {
 }
 
 #about .about-blok .aboutinfo .about-img {
-  padding: 15px;
+  padding: 1px;
   overflow: hidden;
   height: auto;
+  order: -1;
 }
 
 #about .about-blok .aboutinfo .about-img::before {
