@@ -1,0 +1,73 @@
+# Dependencies
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+
+# Environment files
+.env
+.env.local
+.env.*.local
+.env.development
+.env.test
+.env.production
+
+# IDE/Editor specific
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Build/Distribution
+dist/
+build/
+out/
+.next/
+
+# Logs and databases
+*.log
+*.sqlite
+*.sqlite3
+
+# Cache directories
+.cache/
+.temp/
+.tmp/
+.sass-cache/
+
+# Testing
+coverage/
+.nyc_output/
+
+# Email configuration
+emailjs-config.json
+
+# Personal files that shouldn't be versioned
+TODO.md
+NOTES.md
+*.pdf
+!willisivali.pdf
+
+# Temporary files
+*.tmp
+*~
+
+# Operating System
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Optional: Uncomment if using these tools
+# cypress/videos/
+# cypress/screenshots/
+# storybook-static/
+# .eslintcache
+# .stylelintcache
