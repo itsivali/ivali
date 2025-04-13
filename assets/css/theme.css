@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-wrapper {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #ff3d4f;
+}
+
+.section-title h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #ff3d4f;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.sidebar-contet {
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background-color: #333;
+    padding: 20px;
+    border-radius: 5px 0 0 5px;
+}
+
+.sidebar-contet .maintitle {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.list-sidebar {
+    list-style: none;
+    padding: 0;
+}
+
+.list-sidebar li {
+    margin-bottom: 10px;
+}
+
+.list-sidebar li span {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.list-sidebar li span[data-color="default"] {
+    background-color: #ff3d4f;
+}
+
+.list-sidebar li span[data-color="orange"] {
+    background-color: #ffa500;
+}
+
+.list-sidebar li span[data-color="gold"] {
+    background-color: #cd7f32;
+}
+
+.list-sidebar li span[data-color="green"] {
+    background-color: #228b22;
+}
+
+.list-sidebar li span[data-color="blue"] {
+    background-color: #0000ff;
+}
+
+.list-sidebar li span[data-color="purple"] {
+    background-color: #800080;
+}
+
+.list-sidebar li span[data-color="yellow"] {
+    background-color: #ffff00;
+}
+
+.list-sidebar li span[data-color="rose"] {
+    background-color: #ff007f;
+}
+
+.list-change-menu .btn {
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.list-change-menu .btn.active {
+    background-color: #ff3d4f;
+    color: #fff;
+}
